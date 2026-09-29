@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+node_modules/
+__pycache__/
+*.log
+verification/
+/outputs/*.skb
+/outputs/transition-scratch.skp

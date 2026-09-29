@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="id">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#eae8df"><meta name="description" content="Model arsitektur berdasarkan DWG proyek"><title>DWG Digital Twin</title><link rel="stylesheet" href="style.css">
+ <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
+</head>
+<body>
+ <main id="viewport" aria-label="Model tiga dimensi kawasan DWG"><canvas id="scene" aria-label="Model 3D. Seret untuk memutar, gulir untuk memperbesar." tabindex="0"></canvas></main>
+ <header><a class="brand" href="./"><span class="monogram">D°</span><span id="project-title">DWG DIGITAL TWIN</span></a><div class="project-meta"><span>STUDI ARSITEKTUR</span><span id="project-size"></span></div><button id="info" class="circle" aria-label="Informasi model">i</button></header>
+ <section id="loading" aria-live="polite"><span class="loading-mark">D°</span><p>Menyiapkan kawasan</p><div class="track"><span id="progress"></span></div><small id="load-detail">Geometri dan material</small></section>
+ <section class="view-caption" aria-live="polite"><span class="eyebrow">DWG / <span id="view-no">01</span></span><h1 id="view-title">Keseluruhan tapak</h1><p id="view-detail">Model berdasarkan gambar proyek.</p></section>
+ <aside class="controls" aria-label="Pengaturan tampilan">
+  <div class="control-heading"><span>TAMPILAN</span><button id="collapse" aria-label="Ciutkan pengaturan" aria-expanded="true">−</button></div>
+  <div id="settings"><label for="view">Sudut pandang</label><select id="view"></select>
+   <div class="divider"></div><div class="row"><span>Atap</span><button class="switch" id="roof" role="switch" aria-checked="true" aria-label="Tampilkan atap"><span></span></button></div>
+   <div class="row"><span>Interior</span><button class="switch" id="interiors" role="switch" aria-checked="true" aria-label="Tampilkan interior"><span></span></button></div>
+   <label for="walk-mode">Jelajah kawasan</label><select id="walk-mode"><option value="orbit">Orbit model</option><option value="third">Orang ketiga · karakter</option><option value="first">Orang pertama</option></select>
+   <div class="divider"></div><span class="control-label">BUKA / TUTUP</span>
+   <div id="door-controls"></div>
+   <label for="time">Cahaya</label><div class="segmented" id="time"><button data-time="day" class="active" aria-pressed="true">Siang</button><button data-time="dusk" aria-pressed="false">Senja</button></div>
+   <label for="quality">Kualitas</label><select id="quality"><option value="auto">Adaptif</option><option value="high">Tinggi</option><option value="low">Ringan</option></select><small id="quality-note">Menyesuaikan perangkat</small>
+  </div>
+ </aside>
+ <footer><span class="hint" id="hint">SERET untuk memutar <b>·</b> GULIR untuk zoom</span><div class="tools"><button id="reset" aria-label="Kembali ke tampilan awal">↺ <span>Reset</span></button><button id="capture" aria-label="Simpan gambar model">↗ <span>Simpan gambar</span></button><button id="fullscreen" aria-label="Layar penuh">⛶</button></div><span class="scale">BERDASARKAN DWG proyek</span></footer>
+ <dialog id="details"><button class="close" aria-label="Tutup informasi">×</button><h2>Catatan model</h2><p id="assumptions"></p><p>Detail yang belum tercantum pada gambar merupakan asumsi visual. Model ini bukan perhitungan struktur.</p><a class="download" href="downloads/model.skp" download>Unduh SketchUp ↓</a><a class="notes-link" href="assets/material-sources.json">Sumber material</a></dialog>
+ <section id="walk-hud" aria-label="Kontrol jelajah"><div id="joystick" aria-label="Joystick gerak sentuh"><span id="joystick-knob"></span></div><div class="walk-actions"><button id="interact" disabled>Dekati pintu · E</button><button id="exit-walk">Keluar jelajah · Esc</button><p id="walk-status" aria-live="polite">WASD / joystick · seret untuk melihat</p></div><span class="crosshair" aria-hidden="true">+</span></section>
+ <script type="module" src="app.js"></script>
+</body></html>
+

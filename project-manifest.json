@@ -1,0 +1,16 @@
+{
+  "name": "Pengolahan Hasil Laut Jetis - Astra",
+  "slug": "jetis-digital-twin-astra",
+  "source_filename": "SEND.Pengolahan Hasil Laut - Jetis.dwg",
+  "source_sha256": "ae5a91924b7a508a76e258c8141cf21c816b6378734217fa413e759cd0848072",
+  "publication": "new-public-github-repository-and-pages",
+  "status": "native-audited",
+  "unit_evidence": "measured footprints 165A7 78x30 m; 165AA 84x30 m; repeated 6 m grid",
+  "scene_elements": 1459,
+  "native_output": "outputs/model.skp",
+  "web_output": "web/dist",
+  "repository_url": "https://github.com/bambssquad/jetis-digital-twin-astra",
+  "native_sha256": "5b687f67062b3695f1b13643156b25428f0753d894a3da8ef67737840263c920",
+  "native_readback_passed": true,
+  "web_download_sha256": "5b687f67062b3695f1b13643156b25428f0753d894a3da8ef67737840263c920"
+}

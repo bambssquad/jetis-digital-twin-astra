@@ -1,0 +1,292 @@
+{
+  "name": "Pengolahan Hasil Laut Jetis — Astra",
+  "slug": "jetis-digital-twin-astra",
+  "source_filename": "SEND.Pengolahan Hasil Laut - Jetis.dwg",
+  "source_sha256": "ae5a91924b7a508a76e258c8141cf21c816b6378734217fa413e759cd0848072",
+  "status": "configured",
+  "unit_evidence": [
+    "Tahap 1 30×78 m = polyline 165A7 (78×30) in drawing units",
+    "Tahap 1 30×84 m = polyline 165AA (84×30) in drawing units",
+    "6 m repeated structural grid; insunits header is null"
+  ],
+  "origin_source": [
+    2207.9734130790184,
+    1532.7302629559754
+  ],
+  "north_source_axis": "+X; inferred from U compass arrow on layout plan",
+  "bounds": {
+    "min": [
+      -1.0,
+      -19.0,
+      -0.3
+    ],
+    "max": [
+      161.0,
+      145.0,
+      13.7
+    ]
+  },
+  "center": [
+    79.0,
+    69.0,
+    5.3
+  ],
+  "span": 223.0,
+  "ground_height": 0.0,
+  "walk_bounds": [
+    -1.0,
+    161.0,
+    -19.0,
+    145.0
+  ],
+  "spawn": [
+    108.0,
+    8.0,
+    0.0
+  ],
+  "views": {
+    "overview": {
+      "title": "Kawasan pengolahan Jetis",
+      "detail": "Tapak, akses, parkir dan seluruh tahap berdasarkan layout plan DWG.",
+      "eye": [
+        250.0,
+        -122.0,
+        160
+      ],
+      "target": [
+        79.0,
+        69.0,
+        5.3
+      ]
+    },
+    "entry": {
+      "title": "Gerbang dan halaman depan",
+      "detail": "Pos, jalur kendaraan dan parkir luar yang ditandai pada gambar.",
+      "eye": [
+        111,
+        -83,
+        38
+      ],
+      "target": [
+        111,
+        17,
+        3.5
+      ]
+    },
+    "phase1": {
+      "title": "Tahap 1 · proses dan gudang",
+      "detail": "Dua kompleks 30 m, modul struktur 6 m dan sayap layanan.",
+      "eye": [
+        172,
+        8,
+        59
+      ],
+      "target": [
+        91,
+        49,
+        5.5
+      ]
+    },
+    "process": {
+      "title": "Interior · rantai dingin",
+      "detail": "Alur sortasi, pencucian, pembekuan, kemasan dan rak gudang adalah asumsi visual.",
+      "eye": [
+        118,
+        28,
+        31
+      ],
+      "target": [
+        72,
+        53,
+        2.2
+      ],
+      "interior": true
+    },
+    "phase2": {
+      "title": "Tahap 2 · ekspansi",
+      "detail": "Footprint 84 × 36 m dibaca dari poligon sumber; atap dan fungsi ruang diinferensikan.",
+      "eye": [
+        176,
+        144,
+        55
+      ],
+      "target": [
+        96,
+        123,
+        5.0
+      ]
+    },
+    "yard": {
+      "title": "Halaman logistik",
+      "detail": "Area bongkar muat dan pelataran parkir luar.",
+      "eye": [
+        157,
+        -47,
+        33
+      ],
+      "target": [
+        118,
+        21,
+        1.5
+      ]
+    }
+  },
+  "roof_groups": [
+    "Atap | Tahap 1 — Pengolahan utama 78 × 30 m",
+    "Atap | Tahap 1 — Gudang dingin 84 × 30 m",
+    "Atap | Tahap 1 — Sayap layanan 36 × 30 m (sisi atas layout)",
+    "Atap | Tahap 1 — Sayap layanan 36 × 30 m (sisi bawah layout)",
+    "Atap | Tahap 2 — Ekspansi 84 × 36 m"
+  ],
+  "interior_groups": [
+    "Interior | Tahap 1 — Pengolahan utama 78 × 30 m",
+    "Interior | Tahap 1 — Gudang dingin 84 × 30 m",
+    "Interior | Tahap 1 — Sayap layanan 36 × 30 m (sisi atas layout)",
+    "Interior | Tahap 1 — Sayap layanan 36 × 30 m (sisi bawah layout)",
+    "Interior | Tahap 2 — Ekspansi 84 × 36 m"
+  ],
+  "source_footprints": [
+    {
+      "handle": "165A7",
+      "name": "Tahap 1 — Pengolahan utama 78 × 30 m",
+      "bounds_m": [
+        65.412,
+        53.817,
+        78.0,
+        30.0
+      ],
+      "vertices_m": [
+        [
+          65.412,
+          83.817
+        ],
+        [
+          143.412,
+          83.817
+        ],
+        [
+          143.412,
+          53.817
+        ],
+        [
+          65.412,
+          53.817
+        ]
+      ]
+    },
+    {
+      "handle": "165AA",
+      "name": "Tahap 1 — Gudang dingin 84 × 30 m",
+      "bounds_m": [
+        65.412,
+        23.817,
+        84.0,
+        30.0
+      ],
+      "vertices_m": [
+        [
+          65.412,
+          53.817
+        ],
+        [
+          149.412,
+          53.817
+        ],
+        [
+          149.412,
+          23.817
+        ],
+        [
+          65.412,
+          23.817
+        ]
+      ]
+    },
+    {
+      "handle": "1657E",
+      "name": "Tahap 1 — Sayap layanan 36 × 30 m (sisi atas layout)",
+      "bounds_m": [
+        29.412,
+        53.817,
+        36.0,
+        30.0
+      ],
+      "vertices_m": [
+        [
+          29.412,
+          83.817
+        ],
+        [
+          65.412,
+          83.817
+        ],
+        [
+          65.412,
+          53.817
+        ],
+        [
+          29.412,
+          53.817
+        ]
+      ]
+    },
+    {
+      "handle": "16582",
+      "name": "Tahap 1 — Sayap layanan 36 × 30 m (sisi bawah layout)",
+      "bounds_m": [
+        29.412,
+        23.817,
+        36.0,
+        30.0
+      ],
+      "vertices_m": [
+        [
+          29.412,
+          53.817
+        ],
+        [
+          65.412,
+          53.817
+        ],
+        [
+          65.412,
+          23.817
+        ],
+        [
+          29.412,
+          23.817
+        ]
+      ]
+    },
+    {
+      "handle": "1656E",
+      "name": "Tahap 2 — Ekspansi 84 × 36 m",
+      "bounds_m": [
+        53.412,
+        103.817,
+        84.0,
+        36.0
+      ],
+      "vertices_m": [
+        [
+          53.412,
+          139.817
+        ],
+        [
+          53.412,
+          103.817
+        ],
+        [
+          137.412,
+          103.817
+        ],
+        [
+          137.412,
+          133.817
+        ]
+      ]
+    }
+  ],
+  "status_detail": "Model geometri konseptual diturunkan dari footprint/layout; detail yang tidak berdimensi diberi catatan asumsi.",
+  "download": "downloads/model.skp"
+}

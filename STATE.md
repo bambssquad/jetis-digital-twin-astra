@@ -23,13 +23,16 @@
 - Audit also verifies all 11 roller-door openings clear the 6 m WF-column grid. Doors on the upper stage-1 row face the open 20 m yard at +Y; lower-row and stage-2 doors face the entry yard at −Y. Each door has its own motion ID.
 - Local Three.js browser visibly renders the configured model and controls. Texture check caught and fixed the starter name mismatch (`Concrete03` → available `Concrete034`). Page, scene, project, and corrected 2K/1K concrete texture routes each return HTTP 200.
 - Native build script uses a 200-element incremental queue. Fixed the WF profile `tff` typo before native creation.
-- Shared SketchUp is currently reserved by Luna's parallel version. Astra has not written to SketchUp. The separate public repository `https://github.com/bambssquad/jetis-digital-twin-astra` is created; project files are not pushed until the native SKP exists and is audited. Wait for Luna to release the shared write slot, then use the exclusive `jetis-sketchup.lock`; build only into Astra's `outputs/model.skp`.
+- Shared SketchUp was used for Astra build and read-back only. The final model was saved and audited, and the shared lock file now says released; its deletion was blocked by local policy.
 - Native SKP built in SketchUp Pro 2023 with 1,459 scene elements, 98 reusable definitions, 20 materials, and six scenes. The corrected section builder keeps the WF/CNP profile coordinates in metres until face construction converts them.
 - Reopened SKP audit passes: 1,459 expected/actual object IDs, zero non-manifold solids, six scenes, nine texture materials; bounds 165.25 × 158.70 × 13.95 m.
 - Native SKP and web download copy SHA-256 match: `5B687F67062B3695F1B13643156B25428F0753D894A3DA8EF67737840263C920`. Luna original SKP checksum still matches its saved audit.
-- Native preview saved as `outputs/model-native.png`. The separate public Astra repository exists; Pages source is GitHub Actions. The SKP and source files are not published yet.
+- Native preview is saved as outputs/model-native.png. Public repository: https://github.com/bambssquad/jetis-digital-twin-astra; GitHub Pages uses GitHub Actions.
+- Pages deployment run 36542692008 succeeded. Public home, scene JSON, project JSON, and referenced texture URLs return HTTP 200. The browser loaded 12/12 textures with no console errors.
+- Anonymous SKP download returned HTTP 200 and 13,079,024 bytes. Its SHA-256 matches the reopened native SKP: 5B687F67062B3695F1B13643156B25428F0753D894A3DA8EF67737840263C920.
+- Public viewer door and gate controls were clicked and restored closed. Local scratch-file deletion was blocked by policy; those files remain ignored by Git and were not published.
 
-## Next
+## Completion
 
-1. Push the audited Astra project, source copy, images, viewer and matching native/download SKP to `bambssquad/jetis-digital-twin-astra`.
-2. Wait for GitHub Pages Actions. Verify the public viewer, scene/textures, and anonymous SKP download SHA.
+- Astra is published and live at https://bambssquad.github.io/jetis-digital-twin-astra/. The anonymous SKP binary matches the locally reopened native model.
+- Geometry, structural member sizes, process layout, equipment, openings, and landscape details that are not explicitly dimensioned in the DWG are visual-study assumptions only.

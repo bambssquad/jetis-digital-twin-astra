@@ -88,3 +88,6 @@
 
 ### R02 purlin source decision
 - Preserve the locked 1.20 m slope spacing from explicit AA aligned dimensions1791C–17942;17943 is a terminal0.80m segment. Reason: T2 roof-plan layerHAT lines1708F/17090 and170A1/170A2 are1.20m apart in plan but are not identified as purlin axes, and cannot override the explicit slope measurement. Plan1.20m would imply slope1.242331m at15°, a3.53% discrepancy. The plan lines remain recorded as schematic/drafting ambiguity; source17985 specifies CNP125×2mm.
+
+### R02 native text encoding receipt
+- Native writer now reads scene/project JSON and writes receipts with explicit UTF-8. Camera title read-back verifies each saved native scene name equals the source title, avoiding Windows default-codepage corruption. Geometry remains frozen at2,713objects;all8cameras,IDs,bounds,texturesandclosedsolids pass. Current native SHA-256 bae564dd307d89c44f1d7eb3e427b7f60d49f6a3a6df81bb4d5ab537e48f171d.

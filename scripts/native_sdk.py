@@ -216,12 +216,13 @@ def audit(api,root,scene,path,expected):
   if code==0 and texture.value:
    w,h=N(),N();ss,tt=D(),D();api.call('SUTextureGetDimensions',texture,C.byref(w),C.byref(h),C.byref(ss),C.byref(tt));assert w.value>0 and h.value>0;texture_count+=1
    name=api.create('SUStringCreate');api.call('SUMaterialGetName',mat,C.byref(name));key=api.string(name).removeprefix('DWG_TWIN ');api.call('SUStringRelease',C.byref(name));tile=1/ss.value/INCH;assert abs(tile-scene['materials'][key].get('tile',2))<1e-8;texture_scales[key]=tile
- scene_count=api.count('SUModelGetNumScenes',model);camera_checks=[];views=json.loads((root/'web/dist/project.json').read_text())['views']
+ scene_count=api.count('SUModelGetNumScenes',model);camera_checks=[];views=json.loads((root/'web/dist/project.json').read_text(encoding='utf-8-sig'))['views']
  for page,view in zip(api.array('SUModelGetNumScenes','SUModelGetScenes',model),views.values()):
+  title_ref=api.create('SUStringCreate');api.call('SUSceneGetName',page,C.byref(title_ref));actual_title=api.string(title_ref);api.call('SUStringRelease',C.byref(title_ref));assert actual_title==view['title'],('scene title encoding',actual_title,view['title'])
   camera=api.get('SUSceneGetCamera',page);fov=D();api.call('SUCameraGetPerspectiveFrustumFOV',camera,C.byref(fov));assert abs(fov.value-42)<1e-8
   eye,target,up=Point(),Point(),Point();api.call('SUCameraGetOrientation',camera,C.byref(eye),C.byref(target),C.byref(up))
   for actual,wanted in [(eye,view['eye']),(target,view['target'])]:assert max(abs(getattr(actual,k)/INCH-v) for k,v in zip(['x','y','z'],wanted))<1e-8
-  camera_checks.append({'title':view['title'],'fov_degrees':fov.value,'passed':True})
+  camera_checks.append({'title':actual_title,'title_encoding_passed':True,'fov_degrees':fov.value,'passed':True})
  assert scene_count==len(views)
  bb=Bounds();api.call('SUEntitiesGetBoundingBox',ents,C.byref(bb));bounds=[[getattr(p,k)/INCH for k in ('x','y','z')] for p in [bb.minimum,bb.maximum]]
  api.call('SUModelRelease',C.byref(model))
@@ -229,7 +230,7 @@ def audit(api,root,scene,path,expected):
 
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--project',type=Path,required=True);parser.add_argument('--dll-dir',type=Path,default=Path(r'C:\Program Files\SketchUp\SketchUp 2023'));parser.add_argument('--output',type=Path);parser.add_argument('--audit-only',action='store_true');args=parser.parse_args()
- root=args.project;scene=json.loads((root/'web/dist/assets/scene.json').read_text());config=json.loads((root/'web/dist/project.json').read_text());output=args.output or root/'outputs/model.skp';proof=root/'verification';proof.mkdir(exist_ok=True)
+ root=args.project;scene=json.loads((root/'web/dist/assets/scene.json').read_text(encoding='utf-8-sig'));config=json.loads((root/'web/dist/project.json').read_text(encoding='utf-8-sig'));output=args.output or root/'outputs/model.skp';proof=root/'verification';proof.mkdir(exist_ok=True)
  api=API(args.dll_dir)
  try:
   if args.audit_only:
@@ -237,7 +238,7 @@ def main():
    for e in scene['elements']:
     v,f,tr=mesh(e);pts=[world([p*INCH for p in a],tr) for a in v];expected[e['id']]=[list(map(min,zip(*pts))),list(map(max,zip(*pts)))]
   else:
-   report=build(api,root,scene,config,output);expected=report.pop('expected_bounds');(proof/'native-sdk-build.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
-  result=audit(api,root,scene,output,expected);(proof/'native-sdk-audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2));print(json.dumps({k:v for k,v in result.items() if k!='objects'},ensure_ascii=False))
+   report=build(api,root,scene,config,output);expected=report.pop('expected_bounds');(proof/'native-sdk-build.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+  result=audit(api,root,scene,output,expected);(proof/'native-sdk-audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8');print(json.dumps({k:v for k,v in result.items() if k!='objects'},ensure_ascii=False))
  finally:api.close()
 if __name__=='__main__':main()

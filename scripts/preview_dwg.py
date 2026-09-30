@@ -38,8 +38,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--bbox", nargs=4, type=float, metavar=("XMIN", "XMAX", "YMIN", "YMAX"))
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--geometry", type=Path, default=GEOMETRY)
+    parser.add_argument("--all-labels", action="store_true")
     args = parser.parse_args()
-    data = json.loads(GEOMETRY.read_text(encoding="utf-8-sig"))
+    data = json.loads(args.geometry.read_text(encoding="utf-8-sig"))
     by_layer: dict[str, list[list[list[float]]]] = {}
 
     def add(layer, points):
@@ -91,10 +93,10 @@ def main():
             label = re.sub(r"\{[^;]*;", "", raw).replace("}", "")
             label = re.sub(r"\\[A-Za-z0-9;]+", " ", label)
             label = " ".join(label.split()).strip(" ;|")
-            if len(label) < 5 or not any(
+            if len(label) < 2 or (not args.all_labels and not any(
                 token in label.upper()
                 for token in ("LAYOUT PLAN", "RENC.", "TAMPAK", "POTONGAN", "PORTAL")
-            ):
+            )):
                 continue
             x, y = entity["position"][:2]
             if xmin <= x <= xmax and ymin <= y <= ymax:

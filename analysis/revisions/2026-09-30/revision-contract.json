@@ -1,0 +1,430 @@
+{
+  "revision": "02",
+  "date": "2026-09-30",
+  "status": "source-facts-locked",
+  "source_filename": "SEND.Pengolahan Hasil Laut - Jetis (1).dwg",
+  "source_sha256": "793d4ec07d86248e5912676eea1f0c5720186aceacdef0ef97ef004aa138faf5",
+  "controlling_layout": {
+    "handle": "165A2",
+    "title": "LAYOUT PLAN ALT.2"
+  },
+  "units": "metres",
+  "source_unit_to_m": 1,
+  "unit_evidence_handles": [
+    "2A310",
+    "2A2FC",
+    "2A313",
+    "2A2FE",
+    "17475",
+    "17476"
+  ],
+  "north_source_axis": "+X",
+  "site": {
+    "handle": "2A2B8",
+    "vertices_source": [
+      [
+        2229.110400218906,
+        1661.000398898244
+      ],
+      [
+        2257.393520631329,
+        1658.4264719885691
+      ],
+      [
+        2258.6770671372797,
+        1674.374904775745
+      ],
+      [
+        2348.4486144166785,
+        1667.96637147533
+      ],
+      [
+        2359.214070025175,
+        1625.0974437357477
+      ],
+      [
+        2353.5869480731308,
+        1625.3317952617144
+      ],
+      [
+        2368.1021573028484,
+        1537.1180281898028
+      ],
+      [
+        2354.695853248286,
+        1535.184482343017
+      ],
+      [
+        2295.0509585662567,
+        1525.306069709227
+      ],
+      [
+        2295.973413079015,
+        1532.7302629559754
+      ],
+      [
+        2207.9734130790184,
+        1532.7302629559754
+      ],
+      [
+        2229.110400218906,
+        1661.000398898244
+      ]
+    ]
+  },
+  "footprints": [
+    {
+      "handle": "2A2E5",
+      "vertices_source": [
+        [
+          2237.3849435338216,
+          1616.5475239736475
+        ],
+        [
+          2273.3849435338216,
+          1616.5475239736475
+        ],
+        [
+          2273.3849435338216,
+          1586.5475239736475
+        ],
+        [
+          2237.3849435338216,
+          1586.5475239736475
+        ]
+      ],
+      "bounds_size_m": [
+        36.0,
+        30.0
+      ]
+    },
+    {
+      "handle": "2A310",
+      "vertices_source": [
+        [
+          2273.3849435338216,
+          1616.5475239736475
+        ],
+        [
+          2351.3849435338216,
+          1616.5475239736475
+        ],
+        [
+          2351.3849435338216,
+          1586.5475240350384
+        ],
+        [
+          2273.3849435338216,
+          1586.5475240350384
+        ]
+      ],
+      "bounds_size_m": [
+        78.0,
+        29.999999938609108
+      ]
+    },
+    {
+      "handle": "2A2E9",
+      "vertices_source": [
+        [
+          2237.3849435338216,
+          1586.5475239736475
+        ],
+        [
+          2273.3849435338216,
+          1586.5475239736475
+        ],
+        [
+          2273.3849435338216,
+          1556.5475239736475
+        ],
+        [
+          2237.3849435338216,
+          1556.5475239736475
+        ]
+      ],
+      "bounds_size_m": [
+        36.0,
+        30.0
+      ]
+    },
+    {
+      "handle": "2A313",
+      "vertices_source": [
+        [
+          2273.3849435338234,
+          1586.5475241332638
+        ],
+        [
+          2357.3849435338216,
+          1586.5475241332638
+        ],
+        [
+          2357.3849435338216,
+          1556.5475239736475
+        ],
+        [
+          2273.3849435338234,
+          1556.5475239736475
+        ]
+      ],
+      "bounds_size_m": [
+        83.99999999999818,
+        30.00000015961632
+      ]
+    },
+    {
+      "handle": "2A2D5",
+      "vertices_source": [
+        [
+          2261.3849435255415,
+          1672.5475239738967
+        ],
+        [
+          2261.3849435255397,
+          1636.5475239738967
+        ],
+        [
+          2345.3849435255397,
+          1636.5475239738967
+        ],
+        [
+          2345.3849435255397,
+          1666.5475239738967
+        ]
+      ],
+      "bounds_size_m": [
+        84.0,
+        36.0
+      ]
+    }
+  ],
+  "stage2": {
+    "outer_footprint": "2A2D5",
+    "outer_shape": "exact 84m trapezoid depth 36 to 30m; do not replace with rectangle",
+    "inner_modules": [
+      "2A3C1",
+      "2A3C2"
+    ],
+    "roof_plan_outline": "16817",
+    "roof_requirement": "Preserve trapezoidal roof outline and 15-degree principal roof planes; interpret taper using source roof plan and T2 sections. Record any extension framing assumption."
+  },
+  "levels": {
+    "main_floor": 0.0,
+    "mezzanine": 4.5,
+    "pedestal_reference": 1.0,
+    "support_reference": 9.0,
+    "nominal_ridge": 13.5,
+    "floor_evidence": [
+      "17B87",
+      "17B9F",
+      "145C8",
+      "1463C"
+    ],
+    "mezzanine_evidence": [
+      "1D929",
+      "1D923"
+    ]
+  },
+  "roof": {
+    "slope_degrees": 15,
+    "slope_source_lines": [
+      "17468",
+      "1746C"
+    ],
+    "datum_y": 1665.1751377759351,
+    "cross_axis_x": 3002.2510946290404,
+    "source_upper_ridge_height": 13.4851121676525,
+    "nominal_ridge_adjustment": 0.0148878323475,
+    "rafter_overhang_horizontal_m": 1.0,
+    "upper_cover_overhang_horizontal_m": 1.1164685703,
+    "central_valley_gap_m": 0.4490734959,
+    "roof_rows_stage1": "continuous 114m and120m, not independent roof ends at36m footprint split",
+    "profile_source_handles": [
+      "17468",
+      "1746C",
+      "17470",
+      "1799B",
+      "17465",
+      "17469",
+      "17998"
+    ],
+    "purlin_slope_spacing_m": 1.2,
+    "purlin_note_handle": "17985",
+    "purlin_nominal_depth_m": 0.125,
+    "purlin_sheet_thickness_m": 0.002,
+    "roof_cover_sheet_thickness_m": 0.0004,
+    "roof_cover_note_handle": "1797F"
+  },
+  "opening_decision": {
+    "chosen_by": "Bam structured reply on2026-09-30",
+    "main_floor": 0.0,
+    "main_door_sill": 1.2,
+    "main_door_frame_size_m": [
+      3,
+      3
+    ],
+    "leaves": 2,
+    "main_mechanism": "two-leaf sliding chosen as documented industrial visual assumption; source shows two leaves and handles only",
+    "loading_platforms_and_access": "Add coherent inside/outside loading platforms at+1.2 with stairs/access as an explicitly approved assumption; ensure physically traversable routes",
+    "stage1_west_handles": [
+      "1651A",
+      "1653E",
+      "16544",
+      "1654A",
+      "2165F",
+      "21665"
+    ],
+    "stage1_west_axis_origin_x": 3101.38182187573,
+    "stage1_west_source_x_mapping": "sourceX=2351.384943533822-u",
+    "stage1_east_axis_origin_x": 3246.747947647136,
+    "stage1_east_source_x_mapping": "sourceX=2237.384943533822+u",
+    "stage1_south_handles": [
+      "1BA1E",
+      "1BA3C",
+      "1BACB",
+      "1BAED"
+    ],
+    "recording_room_door": "source2A431 P90 inward hinged west opening,0.90nominal/0.82clear; keep hinged mechanism"
+  },
+  "new_features": {
+    "weighbridge": {
+      "handle": "2A318",
+      "size_m": [
+        15,
+        4
+      ],
+      "vertices_source": [
+        [
+          2247.884943188941,
+          1551.5475239736475
+        ],
+        [
+          2247.884943188941,
+          1547.5475239736475
+        ],
+        [
+          2262.884943188941,
+          1547.5475239736475
+        ],
+        [
+          2262.884943188941,
+          1551.5475239736475
+        ]
+      ],
+      "dimension_handles": [
+        "2A429",
+        "2A42C"
+      ]
+    },
+    "recording_room": {
+      "centreline_handle": "2A423",
+      "outer_handle": "2A425",
+      "outer_vertices_source": [
+        [
+          2253.8099431889405,
+          1553.4725239736476
+        ],
+        [
+          2256.959943188942,
+          1553.4725239736476
+        ],
+        [
+          2256.959943188942,
+          1556.6225239736473
+        ],
+        [
+          2253.8099431889405,
+          1556.6225239736473
+        ]
+      ],
+      "centreline_size_m": [
+        3,
+        3
+      ],
+      "wall_thickness_m": 0.15,
+      "door_handle": "2A431",
+      "window_handle": "2A438"
+    },
+    "two_level_module": {
+      "handle": "2A302",
+      "vertices_source": [
+        [
+          2237.3849435338216,
+          1556.5475239736475
+        ],
+        [
+          2249.3849435338216,
+          1556.5475239736475
+        ],
+        [
+          2249.3849435338216,
+          1568.5475239736475
+        ],
+        [
+          2237.3849435338216,
+          1568.5475239736475
+        ]
+      ],
+      "size_m": [
+        12,
+        12
+      ],
+      "function": "not specified in drawing"
+    },
+    "stairs_void": {
+      "source_handles": [
+        "2A411",
+        "2A412",
+        "2A413",
+        "2A414",
+        "2A451",
+        "2A452",
+        "2A453",
+        "2A454",
+        "2A455",
+        "2A458",
+        "2A45A",
+        "2A45B",
+        "2A45C"
+      ],
+      "stair_width_m": 0.9,
+      "tread_m": 0.3,
+      "plan_treads": 28,
+      "landings": 2,
+      "target_level_m": 4.5,
+      "riser_assumption": "30rises of0.15m; preserve drawn plan arrangement and slab void",
+      "void_requirement": "Actual stepped void boundary, no solid slab over stair/void"
+    }
+  },
+  "preservation": {
+    "keep_existing_repo_and_pages": true,
+    "snapshot_before_scene_edit": true,
+    "preserve_unaffected_ids_when_possible": true,
+    "original_user_dwg_unchanged": true,
+    "versions": [
+      "Luna",
+      "Astra"
+    ]
+  },
+  "completion": [
+    "Source-frozen dimensional/shape checks,source hash",
+    "Native SKP built,reopened,and IDs/solid/readback audited",
+    "Native and web download SHA256 identical",
+    "Real rendered desktop/mobile viewer and opening/collision/stair routes verified",
+    "GitHub Actions succeeded and anonymous live viewer/download verified"
+  ],
+  "limits": [
+    "Representative WF flange/web sizing, foundations, finishes, process equipment,missing opening mechanisms and dock/access dimensions remain visual assumptions; no engineering approval.",
+    "Hatch/ellipse/point unsupported extraction records must be recorded; do not imply full semantic DWG conversion."
+  ],
+  "mezzanine_decision": {
+    "extent": "lower/east row, full 120x30m with exact stepped stair void",
+    "level_m": 4.5,
+    "slab_thickness_m": 0.15,
+    "status": "full infill and slab thickness are visual assumptions informed by section C-C floor line and framing",
+    "source_framing_depth_m": 0.3,
+    "framing_depth_evidence": "WF300 source beams; 0.3m section profile is not evidence of slab thickness",
+    "preserve_source_void": true
+  }
+}

@@ -109,9 +109,13 @@ def triangles(poly):
 
 def main():
     raw = json.loads(SRC.read_text(encoding="utf-8-sig"))
-    if raw["source_sha256"].lower() != "ae5a91924b7a508a76e258c8141cf21c816b6378734217fa413e759cd0848072":
+    if raw["source_sha256"].lower() != "793d4ec07d86248e5912676eea1f0c5720186aceacdef0ef97ef004aa138faf5":
         raise ValueError("Source hash differs from the approved Astra source copy")
     by_handle = {e.get("handle"): e for e in raw["entities"]}
+    # The unchanged layout polygons received new DWG handles. The legacy
+    # pass keeps unaffected furniture/site IDs; R02 then replaces source scope.
+    from revision_scene import HANDLE_MAP, apply_revision
+    by_handle.update({old: by_handle[new] for old, new in HANDLE_MAP.items()})
 
     source_site = source_xy(by_handle["16551"])
     # This open polyline repeats its first vertex as the final one.
@@ -569,11 +573,12 @@ def main():
                          "color": "#ffe1a9"}
                         for s in specs for x, y in [(s["x"], s["y"])]],
              "footprints": project["source_footprints"], "assumptions": assumptions}
+    scene, project = apply_revision(scene, project, raw)
     OUT_SCENE.parent.mkdir(parents=True, exist_ok=True)
     OUT_SCENE.write_text(json.dumps(scene, ensure_ascii=False, indent=2), encoding="utf-8")
     OUT_PROJECT.write_text(json.dumps(project, ensure_ascii=False, indent=2), encoding="utf-8")
-    summary = {"elements": len(ELEMENTS), "doors": len(motion_specs),
-               "labels": len(labels), "site_triangles": len(triangles(source_site)),
+    summary = {"elements": len(scene["elements"]), "doors": len(scene["motions"]),
+               "labels": len(scene["labels"]), "site_triangles": len(triangles(source_site)),
                "source_sha256": raw["source_sha256"],
                "site_bounds_m": [round(v, 3) for v in bounds(source_site)],
                "footprints": project["source_footprints"],

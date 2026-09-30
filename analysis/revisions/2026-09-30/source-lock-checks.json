@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source_sha256": "793d4ec07d86248e5912676eea1f0c5720186aceacdef0ef97ef004aa138faf5",
+  "dimension_checks": 7,
+  "floor_datums_verified": 2,
+  "mezzanine_height_m": 4.5,
+  "roof_slopes_verified": 2,
+  "roof_slope_degrees": 15,
+  "door_sill_chosen_by_user": 1.2
+}

@@ -7,3 +7,5 @@ __pycache__/
 verification/
 /outputs/*.skb
 /outputs/transition-scratch.skp
+/.revision-backups/
+/outputs/model-r02-sdk.skp

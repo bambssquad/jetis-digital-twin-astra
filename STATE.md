@@ -1,5 +1,20 @@
 # Pengolahan Hasil Laut Jetis — Astra
 
+## Current revision — 02, 30 September 2026
+
+- Current source is `SEND.Pengolahan Hasil Laut - Jetis (1).dwg`, SHA256 `793d4ec07d86248e5912676eea1f0c5720186aceacdef0ef97ef004aa138faf5`. The earlier completion record below describes revision 01 only.
+- The common contract is `analysis/revisions/2026-09-30/revision-contract.json`. Original source, SKP, scene, viewer and generator were backed up by the coordinator under ignored `.revision-backups/r01-2026-09-29` before edits.
+- Astra implementation uses the requested Astra High worker. `revision_scene.py` changes the source-defined building scope while retaining 422 original site/furniture IDs; no Luna files are used or modified.
+- Floor ±0 is confirmed independently by A-A and B-B leader tips. +1 m is the pedestal top. Full lower/east L2 extent 120 × 30 m is supported by A-A profile `17B47` and twenty C-C beam spans from `1D8DB` through `2130C`; continuous slab infill and 150 mm thickness are assumptions because the 300 mm drawn depth is WF framing.
+- Bam selected +1.20 m door sill with inside/outside loading platforms and access. This resolves the section/elevation discrepancy as an explicit visual assumption; main doors remain two leaves, with industrial sliding mechanism assumed. The P90 recording-room door uses its source inward hinge.
+- Roofs now follow 15° profiles, continuous 114/120 m stage-1 rows, source overhang and central valley, 0.40 mm galvalume, 85 CNP 125 × 50 × 2 mm members at 1.20 m slope stations. Stage-2 roof shape follows transformed `16817`, with plan area 3,010.219 m² and exact taper.
+- New source detail includes 15 × 4 m weighbridge, 3 × 3 m recording-room centreline, 150 mm walls, 1.50 m recording window, 12 × 12 m module, actual stepped void, 28 source treads and two landings. Thirty 150 mm rises reach +4.50 m. Stringers, landing supports, dock construction and missing room heights are visual assumptions.
+- Generated scene: 2,689 elements, 30 motions: 27 source 3 × 3 m double doors, one 1.80 × 2.20 m personnel double door, one inward P90 hinge, one existing gate. Thirty-eight source south-elevation window frames are represented. Axis-Y sliding and hinge rotation update both visible geometry and collision geometry.
+- Deterministic `python scripts/audit_scene.py`: PASS. Checks source hash, five exact floor polygons, site area, coplanar/nondegenerate solids, source roof pitch/outline, CNP thickness, matching tread rectangles, slab void and motion leaf sizes.
+- Deterministic `node scripts/check_navigation.mjs`: PASS, 57 routes in both directions (114 checks), 28 double doors closed/open and traversed, P90 closed/open and traversed, full stair ascent/descent, upper-floor elevation and empty void. Avatar height remains 1.70 m.
+- A 1e-6 m floor-edge tolerance fixes a source floating-coordinate gap at the last tread/slab join; it does not alter source dimensions. Dock and stair geometry was rechecked after support additions.
+- User instructed direct SKP output without their MCP. No AutoCAD, SketchUp MCP, shared native application, commit, push or publication was used by this worker. Coordinator owns offline SketchUp C API creation, native readback, rendered desktop/mobile review and publication. Those checks remain pending at this checkpoint.
+
 - Version: Astra. This project has its own source copy, model, web viewer, repository, and GitHub Pages site. Luna uses `jetis-digital-twin-luna`; do not share or overwrite those artifacts.
 - Repository slug: `jetis-digital-twin-astra` under `bambssquad`.
 - The source copy SHA-256 matches the DWG extraction: `AE5A91924B7A508A76E258C8141CF21C816B6378734217FA413E759CD0848072`. Original DWG remains unchanged.
@@ -36,3 +51,17 @@
 
 - Astra is published and live at https://bambssquad.github.io/jetis-digital-twin-astra/. The anonymous SKP binary matches the locally reopened native model.
 - Geometry, structural member sizes, process layout, equipment, openings, and landscape details that are not explicitly dimensioned in the DWG are visual-study assumptions only.
+
+## Revision 02 — 2026-09-30
+- Bam requested studying the newly attached saved DWG and editing/recreating the existing Luna/Astra versions. Existing public repository and Pages identities are retained for this revision.
+- Controlling input: SEND.Pengolahan Hasil Laut - Jetis (1).dwg, SHA-256 793D4EC07D86248E5912676EEA1F0C5720186ACEACDEF0EF97EF004AA138FAF5. Read-only analysis copy is analysis/revisions/2026-09-30/input.dwg; the old source remains intact during intake.
+- Read-only ObjectDBX extraction running. Independent Luna High and Astra High workers are reviewing source evidence before parent locks source facts and authorizes scene implementation.
+
+- R02 scope locked: lower/east 120×30 m upper floor at +4.50 m, with stepped stair void. Full slab infill and 0.15 m slab thickness are recorded visual assumptions; the source 0.30 m profile is WF300 framing depth. Reason: section C-C shows the floor and framing across this row. Main floor ±0 and door sills +1.20 m follow Bam's selected decision; loading/access dimensions remain assumptions.
+
+### R02 native and local rendered verification
+- Bam requested direct SKP output without SketchUp MCP; no MCP calls were used after that instruction. The installed SketchUp 2023 C API wrote and reloaded outputs/model.skp in a separate process. Desktop UI reopening was not used.
+- Native read-back passes all 2,689 IDs and object bounds, closed-edge manifold checks, 8 cameras with 42-degree FOV and source-oriented positions, 9 texture tile sizes, and complete source/assumption metadata. Native SHA-256: c8150ef5b57ed2e1d2f0ac017f5dc7ba00ef23b32604055ca5a51d8a6568ef00. Web download copy matches.
+- Local viewer renders 2,689 elements, loads12/12 maps, and reports zero asset errors. All30controls opened and closed; actual render matrices verify28two-leaf opposite translations with unchanged elevations, P90 rotation, and gate displacement. Offline57routes/114directions pass.
+- Mobile390x844 emulation loads1Ktextures, supports both camera modes, measuresstandingavatar1.70m, and joystickdrag movedthecharacter. Temporaryviewportoverride cleared.
+- Browser stair preset moved inside the building to reveal actual source void; geometry unchanged. Public deployment remains pending.

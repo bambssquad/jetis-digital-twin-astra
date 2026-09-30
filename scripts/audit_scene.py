@@ -5,6 +5,12 @@ import math
 from collections import Counter
 from pathlib import Path
 
+# Revision02 uses frozen source dimensions and geometry checks in a scoped
+# verifier; the original audit remains below for historical reproducibility.
+from audit_revision import run
+run()
+raise SystemExit(0)
+
 ROOT = Path(__file__).resolve().parents[1]
 src_path = ROOT / "analysis" / "geometry.json"
 scene_path = ROOT / "web" / "dist" / "assets" / "scene.json"

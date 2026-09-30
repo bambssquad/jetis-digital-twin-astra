@@ -1,0 +1,289 @@
+{
+  "revision": "02",
+  "native": {
+    "reloaded": true,
+    "method": "native C API read-back; desktop UI not used",
+    "elements_expected": 2689,
+    "elements_actual": 2689,
+    "nonmanifold_solids": 0,
+    "bbox_errors": [],
+    "scenes": 8,
+    "camera_checks": [
+      {
+        "title": "Kawasan pengolahan Jetis",
+        "fov_degrees": 42.0,
+        "passed": true
+      },
+      {
+        "title": "Gerbang dan halaman depan",
+        "fov_degrees": 42.0,
+        "passed": true
+      },
+      {
+        "title": "Tahap 1 Â· proses dan gudang",
+        "fov_degrees": 42.0,
+        "passed": true
+      },
+      {
+        "title": "Lantai utama dan mezzanine",
+        "fov_degrees": 42.0,
+        "passed": true
+      },
+      {
+        "title": "Tahap 2 Â· ekspansi",
+        "fov_degrees": 42.0,
+        "passed": true
+      },
+      {
+        "title": "Halaman logistik",
+        "fov_degrees": 42.0,
+        "passed": true
+      },
+      {
+        "title": "Tangga dan void",
+        "fov_degrees": 42.0,
+        "passed": true
+      },
+      {
+        "title": "Jembatan timbang 15 Ã— 4 m",
+        "fov_degrees": 42.0,
+        "passed": true
+      }
+    ],
+    "texture_materials": 9,
+    "texture_tiles_m": {
+      "asphalt": 4.0,
+      "concrete": 2.2,
+      "floor": 1.4000000000000001,
+      "steel": 0.9,
+      "roof": 1.2999999999999998,
+      "wall": 1.5000000000000002,
+      "door": 1.2,
+      "stainless": 0.6499999999999999,
+      "wood": 1.2999999999999998
+    },
+    "bounds_m": [
+      [
+        -0.055,
+        -17.0,
+        -0.36
+      ],
+      [
+        165.0,
+        141.70000000000002,
+        13.549999999999999
+      ]
+    ],
+    "sha256": "c8150ef5b57ed2e1d2f0ac017f5dc7ba00ef23b32604055ca5a51d8a6568ef00",
+    "bytes": 29674058,
+    "passed": true
+  },
+  "source_scene": {
+    "status": "PASS",
+    "revision": "02",
+    "source_sha256": "793d4ec07d86248e5912676eea1f0c5720186aceacdef0ef97ef004aa138faf5",
+    "elements": 2689,
+    "types": {
+      "prism": 51,
+      "box": 1565,
+      "beam": 706,
+      "cylinder": 18,
+      "sphere": 18,
+      "cnp": 85,
+      "wf": 246
+    },
+    "stable_original_ids": 422,
+    "source_footprints": 5,
+    "site_area_m2": 19054.227,
+    "roof_pitch_degrees": 15,
+    "roof_stage2_plan_area_m2": 3010.219108635094,
+    "cnp125x2_members": 85,
+    "source_treads": 28,
+    "landings": 2,
+    "stair_top": 4.5,
+    "motion_count": 30,
+    "double_sliding": 28,
+    "hinged_source_door": 1,
+    "gate": 1
+  },
+  "desktop_motion_render": {
+    "status": "PASS",
+    "controls": 30,
+    "checks": [
+      {
+        "id": "gate_main",
+        "kind": "slide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_1651a",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_1653e",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_16544",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_1654a",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_2165f",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_21665",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_21700",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_21706",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_2170c",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_2174d",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_21753",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_21759",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_2179e",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_217a4",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_217aa",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_217b0",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_1ba1e",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_1ba3c",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_1bacb",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_1baed",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_1bb25",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_265f3",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_26622",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_26628",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_2662e",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_26634",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_2663a",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "door_26640",
+        "kind": "splitSlide",
+        "rendered_matrix_check": "PASS"
+      },
+      {
+        "id": "recording_hinge",
+        "kind": "hinge",
+        "rendered_matrix_check": "PASS"
+      }
+    ]
+  },
+  "mobile_emulation": {
+    "ready": true,
+    "errors": [],
+    "textures": 12,
+    "quality": "low",
+    "walk": {
+      "mode": "third",
+      "position": [
+        47.41583361269789,
+        0,
+        -14.655108780829968
+      ],
+      "blocked": false,
+      "moving": false
+    },
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  "avatar_measured_height_m": 1.7,
+  "native_UI_reopen": false,
+  "native_API_reload": true,
+  "publication": "pending"
+}

@@ -3,8 +3,8 @@
   "native": {
     "reloaded": true,
     "method": "native C API read-back; desktop UI not used",
-    "elements_expected": 2689,
-    "elements_actual": 2689,
+    "elements_expected": 2713,
+    "elements_actual": 2713,
     "nonmanifold_solids": 0,
     "bbox_errors": [],
     "scenes": 8,
@@ -20,7 +20,7 @@
         "passed": true
       },
       {
-        "title": "Tahap 1 Â· proses dan gudang",
+        "title": "Tahap 1 · proses dan gudang",
         "fov_degrees": 42.0,
         "passed": true
       },
@@ -30,7 +30,7 @@
         "passed": true
       },
       {
-        "title": "Tahap 2 Â· ekspansi",
+        "title": "Tahap 2 · ekspansi",
         "fov_degrees": 42.0,
         "passed": true
       },
@@ -45,7 +45,7 @@
         "passed": true
       },
       {
-        "title": "Jembatan timbang 15 Ã— 4 m",
+        "title": "Jembatan timbang 15 × 4 m",
         "fov_degrees": 42.0,
         "passed": true
       }
@@ -74,8 +74,8 @@
         13.549999999999999
       ]
     ],
-    "sha256": "c8150ef5b57ed2e1d2f0ac017f5dc7ba00ef23b32604055ca5a51d8a6568ef00",
-    "bytes": 29674058,
+    "sha256": "7fb7f3c029e6b473ebb348a30b6aa186d33aa4939ae47b2542617ecb66ab6f45",
+    "bytes": 29680435,
     "passed": true
   },
   "source_scene": {
@@ -285,70 +285,2581 @@
   "avatar_measured_height_m": 1.7,
   "native_UI_reopen": false,
   "native_API_reload": true,
-  "publication": {
-    "commit": "edf8ff8e8098977a2c4ce122c83ca05ab7d37627",
-    "workflow_id": 36692993181,
-    "workflow_conclusion": "success",
-    "repo_public": true,
-    "assets": [
+  "publication": "pending source-window correction deploy",
+  "source_independent_review": {
+    "review_scope": "Read-only independent geometry comparison. Actual element coordinates versus raw DWG polylines/block transform. No use of opening_evidence or generator-derived expected coordinates. Not a native SKP face audit.",
+    "scene_sha256": "3906299bb1100f2bfadd84181a297a768904556c88080787281ac254d561d98a",
+    "source_sha256": "793D4EC07D86248E5912676EEA1F0C5720186ACEACDEF0EF97EF004AA138FAF5",
+    "element_count": 2713,
+    "tolerance_m": 0.001,
+    "openings": [
       {
-        "path": "downloads/model.skp",
-        "status": 200,
-        "bytes": 29674058,
-        "sha256": "c8150ef5b57ed2e1d2f0ac017f5dc7ba00ef23b32604055ca5a51d8a6568ef00",
-        "match": true
+        "handle": "1651A",
+        "facade": "west",
+        "raw_elevation_bbox": [
+          3108.8815706731093,
+          1651.1206163996835,
+          3111.8815706731093,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2340.885194736443,
+          2343.885194736443
+        ],
+        "actual_leaf_world_limits": [
+          2340.884943534069,
+          2343.884943534069
+        ],
+        "max_limit_error_m": 0.00025120237387454836,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
       },
       {
-        "path": "assets/scene.json",
-        "status": 200,
-        "bytes": 1208068,
-        "sha256": "6fc8f838ebd459e6e79ca480119e25feee1c9bd7ab09b18b3e7748df971b9267",
-        "match": false,
-        "local_sha256": "0651e1d9e6b7f2f1ac42e57eaa7399673638c8f7b5f1754479977fd48814e4ea",
-        "lf_normalized_match": true
+        "handle": "1653E",
+        "facade": "west",
+        "raw_elevation_bbox": [
+          3120.8815706731093,
+          1651.1206163996835,
+          3123.8815706731093,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2328.885194736443,
+          2331.885194736443
+        ],
+        "actual_leaf_world_limits": [
+          2328.884943534069,
+          2331.884943534069
+        ],
+        "max_limit_error_m": 0.00025120237387454836,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
       },
       {
-        "path": "project.json",
-        "status": 200,
-        "bytes": 7184,
-        "sha256": "542358bec1fdcc4d1d3d7a3a4601379ec05b7d8270052dc56632b0052acb0121",
-        "match": false,
-        "local_sha256": "0ec4960d3146fbfdd9586f149a4326cb637545104b1d344929055554ee81614d",
-        "lf_normalized_match": true
+        "handle": "16544",
+        "facade": "west",
+        "raw_elevation_bbox": [
+          3132.8815706731093,
+          1651.1206163996835,
+          3135.8815706731093,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2316.885194736443,
+          2319.885194736443
+        ],
+        "actual_leaf_world_limits": [
+          2316.884943534069,
+          2319.884943534069
+        ],
+        "max_limit_error_m": 0.00025120237387454836,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
       },
       {
-        "path": "app.js",
-        "status": 200,
-        "bytes": 19493,
-        "sha256": "3481133d17120ac716596fdba35cf9153390e7f804937f0d9cb6242984f0a06a",
-        "match": false,
-        "local_sha256": "a1b113fbd756e4d1a4dbf929ca7570855c2a49af727a8aca7e66c64bc13560a9",
-        "lf_normalized_match": true
+        "handle": "1654A",
+        "facade": "west",
+        "raw_elevation_bbox": [
+          3144.8815706731093,
+          1651.1206163996835,
+          3147.8815706731093,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2304.885194736443,
+          2307.885194736443
+        ],
+        "actual_leaf_world_limits": [
+          2304.884943534069,
+          2307.884943534069
+        ],
+        "max_limit_error_m": 0.00025120237387454836,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
       },
       {
-        "path": "experience.js",
-        "status": 200,
-        "bytes": 8705,
-        "sha256": "2f7ca92f47c06bda9f57197a425e37790ca87c2215804413fe8cd9fbf8f31bba",
-        "match": false,
-        "local_sha256": "26f0b0e95f630804ce180b80611c820c2a68b6a7f87244d3cf10a7cd5edc91c1",
-        "lf_normalized_match": true
+        "handle": "2165F",
+        "facade": "west",
+        "raw_elevation_bbox": [
+          3156.8815706731093,
+          1651.1206164610744,
+          3159.8815706731093,
+          1654.1206164610744
+        ],
+        "expected_world_limits": [
+          2292.885194736443,
+          2295.885194736443
+        ],
+        "actual_leaf_world_limits": [
+          2292.884943534069,
+          2295.884943534069
+        ],
+        "max_limit_error_m": 0.00025120237387454836,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
       },
       {
-        "path": "navigation.js",
-        "status": 200,
-        "bytes": 4786,
-        "sha256": "2aaebc1e1a4358efa4cac9ad3f19b57809f9bfdcd6a78d039840431032ba1133",
-        "match": false,
-        "local_sha256": "5568050214b4fe13b6bba4d381ba59ad7632570016e81493d72216689ccb5d55",
-        "lf_normalized_match": true
+        "handle": "21665",
+        "facade": "west",
+        "raw_elevation_bbox": [
+          3168.8815706731057,
+          1651.1206163996835,
+          3171.8815706731057,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2280.8851947364465,
+          2283.8851947364465
+        ],
+        "actual_leaf_world_limits": [
+          2280.8849435340726,
+          2283.8849435340726
+        ],
+        "max_limit_error_m": 0.00025120237387454836,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "21700",
+        "facade": "east",
+        "raw_elevation_bbox": [
+          3284.247947646887,
+          1651.1206163996835,
+          3287.247947646887,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2274.8849435335733,
+          2277.8849435335733
+        ],
+        "actual_leaf_world_limits": [
+          2274.884943533573,
+          2277.884943533573
+        ],
+        "max_limit_error_m": 4.547473508864641e-13,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "21706",
+        "facade": "east",
+        "raw_elevation_bbox": [
+          3290.247947646887,
+          1651.1206163996835,
+          3293.247947646887,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2280.8849435335733,
+          2283.8849435335733
+        ],
+        "actual_leaf_world_limits": [
+          2280.884943533573,
+          2283.884943533573
+        ],
+        "max_limit_error_m": 4.547473508864641e-13,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "2170C",
+        "facade": "east",
+        "raw_elevation_bbox": [
+          3296.247947646887,
+          1651.1206163996835,
+          3299.247947646887,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2286.8849435335733,
+          2289.8849435335733
+        ],
+        "actual_leaf_world_limits": [
+          2286.884943533573,
+          2289.884943533573
+        ],
+        "max_limit_error_m": 4.547473508864641e-13,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "2174D",
+        "facade": "east",
+        "raw_elevation_bbox": [
+          3302.247947646887,
+          1651.1206163996835,
+          3305.247947646887,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2292.8849435335733,
+          2295.8849435335733
+        ],
+        "actual_leaf_world_limits": [
+          2292.884943533573,
+          2295.884943533573
+        ],
+        "max_limit_error_m": 4.547473508864641e-13,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "21753",
+        "facade": "east",
+        "raw_elevation_bbox": [
+          3308.247947646887,
+          1651.1206163996835,
+          3311.247947646887,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2298.8849435335733,
+          2301.8849435335733
+        ],
+        "actual_leaf_world_limits": [
+          2298.884943533573,
+          2301.884943533573
+        ],
+        "max_limit_error_m": 4.547473508864641e-13,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "21759",
+        "facade": "east",
+        "raw_elevation_bbox": [
+          3314.247947646887,
+          1651.1206163996835,
+          3317.247947646887,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2304.8849435335733,
+          2307.8849435335733
+        ],
+        "actual_leaf_world_limits": [
+          2304.884943533573,
+          2307.884943533573
+        ],
+        "max_limit_error_m": 4.547473508864641e-13,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "2179E",
+        "facade": "east",
+        "raw_elevation_bbox": [
+          3338.247947646887,
+          1651.1206163996835,
+          3341.247947646887,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2328.8849435335733,
+          2331.8849435335733
+        ],
+        "actual_leaf_world_limits": [
+          2328.884943533573,
+          2331.884943533573
+        ],
+        "max_limit_error_m": 4.547473508864641e-13,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "217A4",
+        "facade": "east",
+        "raw_elevation_bbox": [
+          3344.247947646887,
+          1651.1206163996835,
+          3347.247947646887,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2334.8849435335733,
+          2337.8849435335733
+        ],
+        "actual_leaf_world_limits": [
+          2334.884943533573,
+          2337.884943533573
+        ],
+        "max_limit_error_m": 4.547473508864641e-13,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "217AA",
+        "facade": "east",
+        "raw_elevation_bbox": [
+          3350.247947646887,
+          1651.1206163996835,
+          3353.247947646887,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2340.8849435335733,
+          2343.8849435335733
+        ],
+        "actual_leaf_world_limits": [
+          2340.884943533573,
+          2343.884943533573
+        ],
+        "max_limit_error_m": 4.547473508864641e-13,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "217B0",
+        "facade": "east",
+        "raw_elevation_bbox": [
+          3356.247947646887,
+          1651.1206163996835,
+          3359.247947646887,
+          1654.1206163996835
+        ],
+        "expected_world_limits": [
+          2346.8849435335733,
+          2349.8849435335733
+        ],
+        "actual_leaf_world_limits": [
+          2346.884943533573,
+          2349.884943533573
+        ],
+        "max_limit_error_m": 4.547473508864641e-13,
+        "fixed_axis_error_m": 0.0,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "1BA1E",
+        "facade": "south",
+        "raw_elevation_bbox": [
+          2911.526118294709,
+          1665.212104433343,
+          2914.526118294709,
+          1668.212104433343
+        ],
+        "expected_world_limits": [
+          1606.0475239736588,
+          1609.0475239736588
+        ],
+        "actual_leaf_world_limits": [
+          1606.0475234677288,
+          1609.0475234677288
+        ],
+        "max_limit_error_m": 5.059300747234374e-07,
+        "fixed_axis_error_m": 4.547473508864641e-13,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "1BA3C",
+        "facade": "south",
+        "raw_elevation_bbox": [
+          2923.526118294709,
+          1665.212104433343,
+          2926.526118294709,
+          1668.212104433343
+        ],
+        "expected_world_limits": [
+          1594.0475239736588,
+          1597.0475239736588
+        ],
+        "actual_leaf_world_limits": [
+          1594.0475234677288,
+          1597.0475234677288
+        ],
+        "max_limit_error_m": 5.059300747234374e-07,
+        "fixed_axis_error_m": 4.547473508864641e-13,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "1BACB",
+        "facade": "south",
+        "raw_elevation_bbox": [
+          2935.526118294716,
+          1665.212104433343,
+          2938.526118294716,
+          1668.212104433343
+        ],
+        "expected_world_limits": [
+          1582.0475239736516,
+          1585.0475239736516
+        ],
+        "actual_leaf_world_limits": [
+          1582.0475234677215,
+          1585.0475234677215
+        ],
+        "max_limit_error_m": 5.059300747234374e-07,
+        "fixed_axis_error_m": 4.547473508864641e-13,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "1BAED",
+        "facade": "south",
+        "raw_elevation_bbox": [
+          2947.526118294716,
+          1665.212104433343,
+          2950.526118294716,
+          1668.212104433343
+        ],
+        "expected_world_limits": [
+          1570.0475239736516,
+          1573.0475239736516
+        ],
+        "actual_leaf_world_limits": [
+          1570.0475234677215,
+          1573.0475234677215
+        ],
+        "max_limit_error_m": 5.059300747234374e-07,
+        "fixed_axis_error_m": 4.547473508864641e-13,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "265F3",
+        "facade": "stage2east",
+        "raw_elevation_bbox": [
+          2974.3215171790634,
+          1522.1888636986664,
+          2977.3215171790634,
+          1525.1888636986664
+        ],
+        "expected_world_limits": [
+          2262.884943533822,
+          2265.884943533822
+        ],
+        "actual_leaf_world_limits": [
+          2262.8849435255397,
+          2265.8849435255397
+        ],
+        "max_limit_error_m": 8.282313501695171e-09,
+        "fixed_axis_error_m": 2.4920154828578234e-10,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "26622",
+        "facade": "stage2east",
+        "raw_elevation_bbox": [
+          2986.3215171790634,
+          1522.188863698579,
+          2989.3215171790634,
+          1525.188863698579
+        ],
+        "expected_world_limits": [
+          2274.884943533822,
+          2277.884943533822
+        ],
+        "actual_leaf_world_limits": [
+          2274.8849435255397,
+          2277.8849435255397
+        ],
+        "max_limit_error_m": 8.282313501695171e-09,
+        "fixed_axis_error_m": 2.4920154828578234e-10,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "26628",
+        "facade": "stage2east",
+        "raw_elevation_bbox": [
+          2998.3215171790634,
+          1522.1888636986664,
+          3001.3215171790634,
+          1525.1888636986664
+        ],
+        "expected_world_limits": [
+          2286.884943533822,
+          2289.884943533822
+        ],
+        "actual_leaf_world_limits": [
+          2286.8849435255397,
+          2289.8849435255397
+        ],
+        "max_limit_error_m": 8.282313501695171e-09,
+        "fixed_axis_error_m": 2.4920154828578234e-10,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "2662E",
+        "facade": "stage2east",
+        "raw_elevation_bbox": [
+          3010.3215171790634,
+          1522.1888636986664,
+          3013.3215171790634,
+          1525.1888636986664
+        ],
+        "expected_world_limits": [
+          2298.884943533822,
+          2301.884943533822
+        ],
+        "actual_leaf_world_limits": [
+          2298.8849435255397,
+          2301.8849435255397
+        ],
+        "max_limit_error_m": 8.282313501695171e-09,
+        "fixed_axis_error_m": 2.4920154828578234e-10,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "26634",
+        "facade": "stage2east",
+        "raw_elevation_bbox": [
+          3022.3215171790634,
+          1522.1888636986664,
+          3025.3215171790634,
+          1525.1888636986664
+        ],
+        "expected_world_limits": [
+          2310.884943533822,
+          2313.884943533822
+        ],
+        "actual_leaf_world_limits": [
+          2310.8849435255397,
+          2313.8849435255397
+        ],
+        "max_limit_error_m": 8.282313501695171e-09,
+        "fixed_axis_error_m": 2.4920154828578234e-10,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "2663A",
+        "facade": "stage2east",
+        "raw_elevation_bbox": [
+          3034.3215171790634,
+          1522.1888636982299,
+          3037.3215171790634,
+          1525.1888636982299
+        ],
+        "expected_world_limits": [
+          2322.884943533822,
+          2325.884943533822
+        ],
+        "actual_leaf_world_limits": [
+          2322.8849435255397,
+          2325.8849435255397
+        ],
+        "max_limit_error_m": 8.282313501695171e-09,
+        "fixed_axis_error_m": 2.4920154828578234e-10,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
+      },
+      {
+        "handle": "26640",
+        "facade": "stage2east",
+        "raw_elevation_bbox": [
+          3046.3215171790634,
+          1522.1888636986664,
+          3049.3215171790634,
+          1525.1888636986664
+        ],
+        "expected_world_limits": [
+          2334.884943533822,
+          2337.884943533822
+        ],
+        "actual_leaf_world_limits": [
+          2334.8849435255397,
+          2337.8849435255397
+        ],
+        "max_limit_error_m": 8.282313501695171e-09,
+        "fixed_axis_error_m": 2.4920154828578234e-10,
+        "actual_sill_head": [
+          1.2,
+          4.2
+        ],
+        "source_height_m": 3.0,
+        "leaf_count": 2,
+        "opaque_wall_intersections": [],
+        "pass": true
       }
     ],
-    "browser": {
-      "ready": true,
-      "elements": 2689,
-      "texture_loads": 12,
-      "asset_errors": []
-    }
+    "checks": {
+      "recorder_window": {
+        "source_handle": "2A438",
+        "source_world_limits": [
+          2254.6349435100037,
+          2256.1349428678786
+        ],
+        "actual_world_limits": [
+          2254.6349435100037,
+          2256.1349428678786
+        ],
+        "max_error_m": 0.0,
+        "opaque_wall_intersections": [],
+        "pass": true,
+        "sill_head_assumed_m": [
+          0.9,
+          2.1
+        ]
+      },
+      "p90": {
+        "source_handle": "2A431",
+        "actual_clear_y": [
+          1555.612523973647,
+          1556.4325239736468
+        ],
+        "source_clear_y": [
+          1555.612523973647,
+          1556.4325239736468
+        ],
+        "actual_pivot_world": [
+          2253.959943188941,
+          1556.4325239736468
+        ],
+        "source_leaf_hinge_corner_world": [
+          2253.9599431889396,
+          1556.4325239736463
+        ],
+        "source_arc_center_world": [
+          2253.9799431889355,
+          1556.4125239736486
+        ],
+        "pivot_corner_delta_m": [
+          1.3642420526593924e-12,
+          4.547473508864641e-13
+        ],
+        "pivot_arc_delta_m": [
+          -0.019999999994524842,
+          0.01999999999816282
+        ],
+        "north_hinge": true,
+        "inward_positive_x": true,
+        "clear_width_pass": true,
+        "exact_source_pivot_pass": true,
+        "actual_closed_leaf_world_p": [
+          2253.919943188941,
+          1555.612523973647,
+          0
+        ],
+        "actual_closed_leaf_size": [
+          0.04,
+          0.819999999999709,
+          2.1
+        ],
+        "actual_open_leaf_world_points": [
+          [
+            2254.7799431889407,
+            1556.3925239736468
+          ],
+          [
+            2254.7799431889407,
+            1556.4325239736468
+          ],
+          [
+            2253.959943188941,
+            1556.4325239736468
+          ],
+          [
+            2253.959943188941,
+            1556.3925239736468
+          ]
+        ],
+        "actual_open_leaf_max_source_vertex_error_m": 1.4380373887290168e-12,
+        "actual_open_leaf_matches_source": true
+      },
+      "stairs": {
+        "footprints": [
+          {
+            "handle": "2A451",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 0.15
+          },
+          {
+            "handle": "2A44F",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 0.3
+          },
+          {
+            "handle": "2A450",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 0.44999999999999996
+          },
+          {
+            "handle": "2A44E",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 0.6
+          },
+          {
+            "handle": "2A446",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 0.75
+          },
+          {
+            "handle": "2A444",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 0.8999999999999999
+          },
+          {
+            "handle": "2A445",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 1.05
+          },
+          {
+            "handle": "2A422",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 1.2000000000000002
+          },
+          {
+            "handle": "2A419",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 1.35
+          },
+          {
+            "handle": "2A418",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 1.5
+          },
+          {
+            "handle": "2A417",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 1.65
+          },
+          {
+            "handle": "2A416",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 1.7999999999999998
+          },
+          {
+            "handle": "2A415",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 1.9500000000000002
+          },
+          {
+            "handle": "2A412",
+            "error_m": 0.0,
+            "source_dims": [
+              0.2999999999992724,
+              0.8999999999996362
+            ],
+            "top_z": 2.1
+          },
+          {
+            "handle": "2A411",
+            "error_m": 0.0,
+            "source_dims": [
+              0.9000000000014552,
+              0.8999999999996362
+            ],
+            "top_z": 2.25
+          },
+          {
+            "handle": "2A413",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 2.4
+          },
+          {
+            "handle": "2A414",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 2.55
+          },
+          {
+            "handle": "2A41A",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 2.6999999999999997
+          },
+          {
+            "handle": "2A41B",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 2.85
+          },
+          {
+            "handle": "2A41C",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 3.0
+          },
+          {
+            "handle": "2A421",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 3.15
+          },
+          {
+            "handle": "2A420",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 3.3
+          },
+          {
+            "handle": "2A41F",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 3.4499999999999997
+          },
+          {
+            "handle": "2A41E",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 3.5999999999999996
+          },
+          {
+            "handle": "2A41D",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 3.75
+          },
+          {
+            "handle": "2A44A",
+            "error_m": 0.0,
+            "source_dims": [
+              0.9000000000014552,
+              0.8999999999996362
+            ],
+            "top_z": 3.9
+          },
+          {
+            "handle": "2A44B",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 4.05
+          },
+          {
+            "handle": "2A44C",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 4.2
+          },
+          {
+            "handle": "2A44D",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 4.35
+          },
+          {
+            "handle": "2A452",
+            "error_m": 0.0,
+            "source_dims": [
+              0.8999999999996362,
+              0.2999999999992724
+            ],
+            "top_z": 4.5
+          }
+        ],
+        "raw_footprint_match_pass": true,
+        "step_count": 30,
+        "landing_count": 2,
+        "tread_count": 28,
+        "join_horizontal_gap_m": 1.1095124818893964e-11,
+        "join_z_gap_m": 1.1102230246251565e-16,
+        "join_width_m": 0.8999999999996362,
+        "max_rise_m": 0.15000000000000036,
+        "last_top_m": 4.5,
+        "join_pass": true
+      },
+      "steel": {
+        "wf150_raw_note": "\\pxqr;{\\fCalibri Light|b0|i0|c0|p34;BALOK ANAK WF 150}",
+        "wf150_count": 7,
+        "wf150_dimensions_m": [
+          [
+            0.075,
+            0.15,
+            0.005,
+            0.007
+          ]
+        ],
+        "wf150_depth_pass": true,
+        "cnp_raw_note": "\\pxqr;{\\fCalibri Light|b0|i0|c0|p34;GORDING CNP 125 x 2mm}",
+        "cnp_count": 85,
+        "cnp_dimensions_m": [
+          [
+            0.05,
+            0.125,
+            0.002,
+            0.002
+          ]
+        ],
+        "cnp_125x2_pass": true,
+        "actual_row1_slope_spacing_m": [
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2
+        ],
+        "spacing_pass": true,
+        "limit": "WF widths and flange/web dimensions beyond nominal depth, CNP width50mm and structural design remain assumptions."
+      }
+    },
+    "findings": [],
+    "summary": {
+      "main_openings_pass": 27,
+      "main_openings_total": 27,
+      "main_windows_pass": 42,
+      "main_windows_total": 42,
+      "south_window_count": 38,
+      "east_window_count": 4,
+      "max_window_bbox_error_m": 5.059300747234374e-07,
+      "p90_exact_leaf_pass": true,
+      "recorder_window_pass": true,
+      "stair_raw_footprints_pass": true,
+      "stair_join_pass": true,
+      "wf150_pass": true,
+      "cnp_pass": true,
+      "major_failures": [],
+      "minor_findings": 0,
+      "outcome": "PASS"
+    },
+    "checked_at_utc": "2026-09-30T09:19:17.796274+00:00",
+    "main_windows": [
+      {
+        "handle": "1BA24",
+        "facade": "south",
+        "raw_bbox": [
+          2911.32611829471,
+          1670.0121044333428,
+          2912.026118294709,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1608.5475239736588,
+          1609.2475239736577
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1608.5475234677288,
+          1609.2475234677277
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA2A",
+        "facade": "south",
+        "raw_bbox": [
+          2912.026118294709,
+          1670.0121044333428,
+          2912.7261182947077,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1607.84752397366,
+          1608.5475239736588
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1607.8475234677298,
+          1608.5475234677288
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA30",
+        "facade": "south",
+        "raw_bbox": [
+          2914.026118294709,
+          1670.0121044333428,
+          2914.7261182947077,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1605.84752397366,
+          1606.5475239736588
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1605.8475234677298,
+          1606.5475234677288
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA36",
+        "facade": "south",
+        "raw_bbox": [
+          2913.32611829471,
+          1670.0121044333428,
+          2914.026118294709,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1606.5475239736588,
+          1607.2475239736577
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1606.5475234677288,
+          1607.2475234677277
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA42",
+        "facade": "south",
+        "raw_bbox": [
+          2923.32611829471,
+          1670.0121044333428,
+          2924.026118294709,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1596.5475239736588,
+          1597.2475239736577
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1596.5475234677288,
+          1597.2475234677277
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA48",
+        "facade": "south",
+        "raw_bbox": [
+          2924.026118294709,
+          1670.0121044333428,
+          2924.7261182947077,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1595.84752397366,
+          1596.5475239736588
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1595.8475234677298,
+          1596.5475234677288
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA4E",
+        "facade": "south",
+        "raw_bbox": [
+          2926.026118294709,
+          1670.0121044333428,
+          2926.7261182947077,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1593.84752397366,
+          1594.5475239736588
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1593.8475234677298,
+          1594.5475234677288
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA54",
+        "facade": "south",
+        "raw_bbox": [
+          2925.32611829471,
+          1670.0121044333428,
+          2926.026118294709,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1594.5475239736588,
+          1595.2475239736577
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1594.5475234677288,
+          1595.2475234677277
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA5A",
+        "facade": "south",
+        "raw_bbox": [
+          2929.32611829471,
+          1670.0121044333428,
+          2930.026118294709,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1590.5475239736588,
+          1591.2475239736577
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1590.5475234677288,
+          1591.2475234677277
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA60",
+        "facade": "south",
+        "raw_bbox": [
+          2930.026118294709,
+          1670.0121044333428,
+          2930.7261182947077,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1589.84752397366,
+          1590.5475239736588
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1589.8475234677298,
+          1590.5475234677288
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA66",
+        "facade": "south",
+        "raw_bbox": [
+          2932.026118294709,
+          1670.0121044333428,
+          2932.7261182947077,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1587.84752397366,
+          1588.5475239736588
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1587.8475234677298,
+          1588.5475234677288
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA6C",
+        "facade": "south",
+        "raw_bbox": [
+          2931.32611829471,
+          1670.0121044333428,
+          2932.026118294709,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1588.5475239736588,
+          1589.2475239736577
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1588.5475234677288,
+          1589.2475234677277
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA76",
+        "facade": "south",
+        "raw_bbox": [
+          2917.32611829471,
+          1670.0121044333428,
+          2918.026118294709,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1602.5475239736588,
+          1603.2475239736577
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1602.5475234677288,
+          1603.2475234677277
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA7C",
+        "facade": "south",
+        "raw_bbox": [
+          2918.026118294709,
+          1670.0121044333428,
+          2918.7261182947077,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1601.84752397366,
+          1602.5475239736588
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1601.8475234677298,
+          1602.5475234677288
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA82",
+        "facade": "south",
+        "raw_bbox": [
+          2920.026118294709,
+          1670.0121044333428,
+          2920.7261182947077,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1599.84752397366,
+          1600.5475239736588
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1599.8475234677298,
+          1600.5475234677288
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA88",
+        "facade": "south",
+        "raw_bbox": [
+          2919.32611829471,
+          1670.0121044333428,
+          2920.026118294709,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1600.5475239736588,
+          1601.2475239736577
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1600.5475234677288,
+          1601.2475234677277
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BA9B",
+        "facade": "south",
+        "raw_bbox": [
+          2956.026118294716,
+          1670.0121044333428,
+          2956.726118294715,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1563.8475239736526,
+          1564.5475239736516
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1563.8475234677226,
+          1564.5475234677215
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BAA1",
+        "facade": "south",
+        "raw_bbox": [
+          2955.326118294717,
+          1670.0121044333428,
+          2956.026118294716,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1564.5475239736516,
+          1565.2475239736505
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1564.5475234677215,
+          1565.2475234677204
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BAA7",
+        "facade": "south",
+        "raw_bbox": [
+          2953.326118294717,
+          1670.0121044333428,
+          2954.026118294716,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1566.5475239736516,
+          1567.2475239736505
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1566.5475234677215,
+          1567.2475234677204
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BAAD",
+        "facade": "south",
+        "raw_bbox": [
+          2954.026118294716,
+          1670.0121044333428,
+          2954.726118294715,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1565.8475239736526,
+          1566.5475239736516
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1565.8475234677226,
+          1566.5475234677215
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BAB3",
+        "facade": "south",
+        "raw_bbox": [
+          2944.026118294716,
+          1670.0121044333428,
+          2944.726118294715,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1575.8475239736526,
+          1576.5475239736516
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1575.8475234677226,
+          1576.5475234677215
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BAB9",
+        "facade": "south",
+        "raw_bbox": [
+          2943.326118294717,
+          1670.0121044333428,
+          2944.026118294716,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1576.5475239736516,
+          1577.2475239736505
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1576.5475234677215,
+          1577.2475234677204
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BABF",
+        "facade": "south",
+        "raw_bbox": [
+          2941.326118294717,
+          1670.0121044333428,
+          2942.026118294716,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1578.5475239736516,
+          1579.2475239736505
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1578.5475234677215,
+          1579.2475234677204
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BAC5",
+        "facade": "south",
+        "raw_bbox": [
+          2942.026118294716,
+          1670.0121044333428,
+          2942.726118294715,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1577.8475239736526,
+          1578.5475239736516
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1577.8475234677226,
+          1578.5475234677215
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BAD1",
+        "facade": "south",
+        "raw_bbox": [
+          2938.026118294716,
+          1670.0121044333428,
+          2938.726118294715,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1581.8475239736526,
+          1582.5475239736516
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1581.8475234677226,
+          1582.5475234677215
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BAD7",
+        "facade": "south",
+        "raw_bbox": [
+          2937.326118294717,
+          1670.0121044333428,
+          2938.026118294716,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1582.5475239736516,
+          1583.2475239736505
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1582.5475234677215,
+          1583.2475234677204
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BADD",
+        "facade": "south",
+        "raw_bbox": [
+          2935.326118294717,
+          1670.0121044333428,
+          2936.026118294716,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1584.5475239736516,
+          1585.2475239736505
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1584.5475234677215,
+          1585.2475234677204
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BAE3",
+        "facade": "south",
+        "raw_bbox": [
+          2936.026118294716,
+          1670.0121044333428,
+          2936.726118294715,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1583.8475239736526,
+          1584.5475239736516
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1583.8475234677226,
+          1584.5475234677215
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BAF3",
+        "facade": "south",
+        "raw_bbox": [
+          2950.026118294716,
+          1670.0121044333428,
+          2950.726118294715,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1569.8475239736526,
+          1570.5475239736516
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1569.8475234677226,
+          1570.5475234677215
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BAF9",
+        "facade": "south",
+        "raw_bbox": [
+          2949.326118294717,
+          1670.0121044333428,
+          2950.026118294716,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1570.5475239736516,
+          1571.2475239736505
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1570.5475234677215,
+          1571.2475234677204
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BAFF",
+        "facade": "south",
+        "raw_bbox": [
+          2947.326118294717,
+          1670.0121044333428,
+          2948.026118294716,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1572.5475239736516,
+          1573.2475239736505
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1572.5475234677215,
+          1573.2475234677204
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BB05",
+        "facade": "south",
+        "raw_bbox": [
+          2948.026118294716,
+          1670.0121044333428,
+          2948.726118294715,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1571.8475239736526,
+          1572.5475239736516
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1571.8475234677226,
+          1572.5475234677215
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BB0B",
+        "facade": "south",
+        "raw_bbox": [
+          2962.026118294716,
+          1670.0121044333428,
+          2962.726118294715,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1557.8475239736526,
+          1558.5475239736516
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1557.8475234677226,
+          1558.5475234677215
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BB11",
+        "facade": "south",
+        "raw_bbox": [
+          2961.326118294717,
+          1670.0121044333428,
+          2962.026118294716,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1558.5475239736516,
+          1559.2475239736505
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1558.5475234677215,
+          1559.2475234677204
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BB17",
+        "facade": "south",
+        "raw_bbox": [
+          2959.326118294717,
+          1670.0121044333428,
+          2960.026118294716,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1560.5475239736516,
+          1561.2475239736505
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1560.5475234677215,
+          1561.2475234677204
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BB1D",
+        "facade": "south",
+        "raw_bbox": [
+          2960.026118294716,
+          1670.0121044333428,
+          2960.726118294715,
+          1671.1521044333426
+        ],
+        "expected_world_limits": [
+          1559.8475239736526,
+          1560.5475239736516
+        ],
+        "expected_z": [
+          6.0000001800358405,
+          7.140000180035713
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1559.8475234677226,
+          1560.5475234677215
+        ],
+        "actual_z": [
+          6.0000001189987415,
+          7.140000118998614
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BB2B",
+        "facade": "south",
+        "raw_bbox": [
+          2959.326118294717,
+          1666.2721042533071,
+          2960.026118294716,
+          1667.412104253307
+        ],
+        "expected_world_limits": [
+          1560.5475239736516,
+          1561.2475239736505
+        ],
+        "expected_z": [
+          2.2600000000002183,
+          3.400000000000091
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1560.5475234677215,
+          1561.2475234677204
+        ],
+        "actual_z": [
+          2.2599999389631193,
+          3.399999938962992
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "1BB31",
+        "facade": "south",
+        "raw_bbox": [
+          2960.026118294716,
+          1666.2721042533071,
+          2960.726118294715,
+          1667.412104253307
+        ],
+        "expected_world_limits": [
+          1559.8475239736526,
+          1560.5475239736516
+        ],
+        "expected_z": [
+          2.2600000000002183,
+          3.400000000000091
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          1559.8475234677226,
+          1560.5475234677215
+        ],
+        "actual_z": [
+          2.2599999389631193,
+          3.399999938962992
+        ],
+        "max_bbox_error_m": 5.059300747234374e-07,
+        "fixed_axis_offset_m": -4.547473508864641e-13,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "216CD",
+        "facade": "east",
+        "raw_bbox": [
+          3248.247947647127,
+          1651.1806163996835,
+          3248.9479476471242,
+          1652.3206163996833
+        ],
+        "expected_world_limits": [
+          2238.8849435338134,
+          2239.5849435338105
+        ],
+        "expected_z": [
+          1.2600000000002183,
+          2.400000000000091
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          2238.884943533813,
+          2239.58494353381
+        ],
+        "actual_z": [
+          1.2600000000002183,
+          2.400000000000091
+        ],
+        "max_bbox_error_m": 4.547473508864641e-13,
+        "fixed_axis_offset_m": 0.0,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "216D3",
+        "facade": "east",
+        "raw_bbox": [
+          3247.5479476471264,
+          1651.1806163996835,
+          3248.247947647127,
+          1652.3206163996833
+        ],
+        "expected_world_limits": [
+          2238.1849435338127,
+          2238.8849435338134
+        ],
+        "expected_z": [
+          1.2600000000002183,
+          2.400000000000091
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          2238.184943533812,
+          2238.884943533813
+        ],
+        "actual_z": [
+          1.2600000000002183,
+          2.400000000000091
+        ],
+        "max_bbox_error_m": 4.547473508864641e-13,
+        "fixed_axis_offset_m": 0.0,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "216D9",
+        "facade": "east",
+        "raw_bbox": [
+          3251.247947647127,
+          1651.1806163996835,
+          3251.9479476471242,
+          1652.3206163996833
+        ],
+        "expected_world_limits": [
+          2241.8849435338134,
+          2242.5849435338105
+        ],
+        "expected_z": [
+          1.2600000000002183,
+          2.400000000000091
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          2241.884943533813,
+          2242.58494353381
+        ],
+        "actual_z": [
+          1.2600000000002183,
+          2.400000000000091
+        ],
+        "max_bbox_error_m": 4.547473508864641e-13,
+        "fixed_axis_offset_m": 0.0,
+        "opaque_wall_intersections": []
+      },
+      {
+        "handle": "216DF",
+        "facade": "east",
+        "raw_bbox": [
+          3250.5479476471264,
+          1651.1806163996835,
+          3251.247947647127,
+          1652.3206163996833
+        ],
+        "expected_world_limits": [
+          2241.1849435338127,
+          2241.8849435338134
+        ],
+        "expected_z": [
+          1.2600000000002183,
+          2.400000000000091
+        ],
+        "glass_count": 1,
+        "pass": true,
+        "actual_world_limits": [
+          2241.184943533812,
+          2241.884943533813
+        ],
+        "actual_z": [
+          1.2600000000002183,
+          2.400000000000091
+        ],
+        "max_bbox_error_m": 4.547473508864641e-13,
+        "fixed_axis_offset_m": 0.0,
+        "opaque_wall_intersections": []
+      }
+    ]
+  },
+  "scene": {
+    "status": "PASS",
+    "revision": "02",
+    "source_sha256": "793d4ec07d86248e5912676eea1f0c5720186aceacdef0ef97ef004aa138faf5",
+    "elements": 2713,
+    "types": {
+      "prism": 51,
+      "box": 1589,
+      "beam": 706,
+      "cylinder": 18,
+      "sphere": 18,
+      "cnp": 85,
+      "wf": 246
+    },
+    "stable_original_ids": 422,
+    "source_footprints": 5,
+    "site_area_m2": 19054.227,
+    "roof_pitch_degrees": 15,
+    "roof_stage2_plan_area_m2": 3010.219108635094,
+    "cnp125x2_members": 85,
+    "source_treads": 28,
+    "landings": 2,
+    "stair_top": 4.5,
+    "motion_count": 30,
+    "double_sliding": 28,
+    "hinged_source_door": 1,
+    "gate": 1
+  },
+  "browser_final": {
+    "ready": true,
+    "elements": 2713,
+    "texture_loads": 12,
+    "asset_errors": []
+  },
+  "p90_final_render": {
+    "closed": [
+      0.03999999910593033,
+      0,
+      0,
+      0,
+      0,
+      2.0999999046325684,
+      0,
+      0,
+      0,
+      0,
+      0.8199999928474426,
+      0,
+      45.966529846191406,
+      1.0499999523162842,
+      -23.292261123657227,
+      1
+    ],
+    "opened": {
+      "matrix": [
+        2.449293581093244e-18,
+        0,
+        -0.03999999910593033,
+        0,
+        0,
+        2.0999999046325684,
+        0,
+        0,
+        0.8199999928474426,
+        0,
+        5.021051830901392e-17,
+        0,
+        46.39653015136719,
+        1.0499999523162842,
+        -23.682260513305664,
+        1
+      ],
+      "progress": 1
+    },
+    "passed": true,
+    "source_opened_polygon_center_error_m": 5.043663371395724e-07
   }
 }

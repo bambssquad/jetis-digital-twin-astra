@@ -71,3 +71,12 @@
 - Anonymous download returns 29,674,058 bytes and SHA-256 c8150ef5b57ed2e1d2f0ac017f5dc7ba00ef23b32604055ca5a51d8a6568ef00, identical to the native audited file. Live source, scene and runtime assets match the committed files after Git line ending normalization.
 - Live Chrome viewer reports ready, 2,689 elements, 12/12 texture loads and zero asset errors. Public screenshot: outputs/revision02-live.jpg. Native desktop UI reopen was not used, per Bam's direct-output request.
 - Source study, floor and opening decisions, visual assumptions, native verification and live evidence are saved. Revision 02 Astra delivery complete.
+
+### R02 source correction — P90
+- Independent raw-source review found the recording-room leaf hinge at the inner wall face, 75 mm from the wall centreline. The closed leaf is now 40 mm thick, and its opened 90-degree polygon matches raw leaf 2A0A7 within 1.44e-12 m. Wall centreline and opening remain source-aligned.
+- Native file rebuilt and loaded in a separate process; 2,689 objects, 8 scenes, no nonmanifold solids and no bound errors. Current native SHA-256 65602cae223d64b44156c40df0407b0e411132bdc95b45bf14bcf437753ab823.
+
+### R02 complete source-window apertures
+- Enumerated all 42 source frames: 38 south and 4 east. Added the missing east openings and subtracted stacked window holes from each existing vertical wall interval. Reason: two upper windows share plan positions with lower windows; both holes must remain clear.
+- Current model contains 2,713 scene/native objects. C API separate-process reload passes all IDs and bounds, 8 cameras, 9 texture scales and zero nonmanifold solids. Native SHA-256 7fb7f3c029e6b473ebb348a30b6aa186d33aa4939ae47b2542617ecb66ab6f45.
+- P90 render reached progress1; the actual opened-mesh matrix maps to source leaf2A0A7 with centre error0.0000005044m.

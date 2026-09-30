@@ -103,7 +103,7 @@ def apply_revision(scene, project, raw):
             vertical = [(base,top)]
             for o in openings:
                 if o['a'] < (a+b)/2 < o['b']:
-                    vertical = [(z0,min(z1,o['sill'])) for z0,z1 in vertical if min(z1,o['sill'])>z0] + [(max(base,o['head']),top)]
+                    vertical = [(v0,v1) for z0,z1 in vertical for v0,v1 in ((z0,min(z1,o['sill'])),(max(z0,o['head']),z1)) if v1-v0>1e-7]
             for z0,z1 in vertical:
                 if z1-z0 < 1e-7: continue
                 p=[a,fixed-thickness/2,z0] if axis=='X' else [fixed-thickness/2,a,z0]
@@ -208,6 +208,14 @@ def apply_revision(scene, project, raw):
         p=source[h]['points'];a=min(p[::2])-t2_axis;b=max(p[::2])-t2_axis
         t2doors.append(double_door('X',yt,xt+a,xt+b,h,'Timur tahap 2 '+str(len(t2doors)+1)))
 
+    # Four source windows in the east elevation, measured from its floor line.
+    for h in ('216CD','216D3','216D9','216DF'):
+        p=source[h]['points']; xa=x0+min(p[::2])-3246.747947647136; xb=x0+max(p[::2])-3246.747947647136
+        sill=min(p[1::2])-1649.9206163996832; head=max(p[1::2])-1649.9206163996832
+        east.append(dict(a=xa,b=xb,sill=sill,head=head))
+        box('Bukaan | Jendela sumber','Jendela sumber '+h,'glass',[xa,y0-.04,sill],[xb-xa,.08,head-sill],collision='wall',source_handles=h)
+        for xx in (xa,xb-.035):
+            box('Bukaan | Jendela sumber','Kusen jendela '+h,'trim',[xx,y0-.07,sill],[.035,.14,head-sill],collision='none')
     eave=ridge-15*slope
     wall('X',y0,x0,x0+120,eave,east,'Dinding timur')
     wall('X',y0+60,x0,x0+114,eave,west,'Dinding barat')
@@ -396,11 +404,11 @@ def apply_revision(scene, project, raw):
     wall('X',ry+3,rx,rx+3,3.0,[],'Pencatatan utara',group='Interior | Pencatatan')
     box('Interior | Pencatatan','Jendela aluminium1.5m','glass',[win_a,ry-.025,.9],[win_b-win_a,.05,1.2],collision='wall',source_handles='2A438')
     floor_rect('Atap | Pencatatan','Atap datar ruang pencatatan',rx-.3,ry-.3,rx+3.3,ry+3.3,3.18,.18,assumption='Room height3m and flat roof are visualization assumptions')
-    key='recording_hinge';p=[rx-.025,ra,0];size=[.05,rb-ra,2.1]
+    key='recording_hinge';p=[rx+.035,ra,0];size=[.04,rb-ra,2.1]
     box('Bukaan | Pencatatan','P90 pencatatan inward','wood',p,size,motion=key,source_handles='2A431')
     #Hinge at north jamb rotates west-wall leaf inward into +X room.
-    motions.append(dict(id=key,label='P90 ruang pencatatan',kind='hinge',pivot=[rx,rb,0],angle=math.pi/2,
-                        bounds=p+size,anchor=[rx,(ra+rb)/2],source_handles=['2A431']))
+    motions.append(dict(id=key,label='P90 ruang pencatatan',kind='hinge',pivot=[rx+.075,rb,0],angle=math.pi/2,
+                        bounds=p+size,anchor=[rx+.075,(ra+rb)/2],source_handles=['2A431']))
     box('Interior | Pencatatan','Meja pencatatan','wood',[rx+1.4,ry+.35,.75],[1.2,.65,.08])
     box('Interior | Pencatatan','Monitor timbangan','steel',[rx+1.8,ry+.48,.85],[.5,.07,.35])
 

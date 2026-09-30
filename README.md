@@ -61,8 +61,10 @@ Workflow GitHub Pages memakai `web/dist` sebagai situs dan memeriksa keberadaan 
 
 ![Viewer revisi 02](outputs/revision02-overview.jpg)
 
-Native berisi 2.689 elemen, 8 scene kamera dan 9 material bertekstur. Pustaka SketchUp 2023 C API lokal menulis SKP tanpa MCP lalu memuat ulang file untuk membaca ID, batas geometri, properti sumber, skala tekstur dan kamera. Semua solid memiliki dua face pada setiap edge. Buka ulang melalui antarmuka aplikasi tidak dilakukan.
+Native berisi 2.713 elemen, 8 scene kamera dan 9 material bertekstur. Pustaka SketchUp 2023 C API lokal menulis SKP tanpa MCP lalu memuat ulang file untuk membaca ID, batas geometri, properti sumber, skala tekstur dan kamera. Semua solid memiliki dua face pada setiap edge. Buka ulang melalui antarmuka aplikasi tidak dilakukan.
 
 `python scripts/native_sdk.py --project .` membuat SKP; `--audit-only` membaca ulang file yang sudah disimpan. Pustaka SketchUpAPI.dll harus tersedia dari instalasi SketchUp 2023 lokal. DLL tidak disertakan atau dipublikasikan. `scripts/build_native.rb` tetap tersedia sebagai catatan jalur sebelumnya; revisi 02 memakai C API sesuai instruksi Bam.
 
 Mode desktop memuat 12/12 map dan 30 kontrol diuji melalui UI serta matriks render. Emulasi mobile 390Ã—844 memuat tekstur 1K dan joystick menggerakkan karakter; tinggi pose berdiri terbaca 1,70 m. Kinerja bergantung perangkat. Gambar `outputs/model-native.png` berasal dari revisi 01; gambar revisi 02 memakai nama `revision02-*`.
+
+Source verification reads actual leaf polygons and wall apertures from the raw DWG. It covers 27 industrial apertures, 42 main window frames, the source P90 hinge, the recorder window cut, all 28 treads and 2 landings with the L2 connection, WF150 depth, and CNP125×2 spacing.

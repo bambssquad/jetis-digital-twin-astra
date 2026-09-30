@@ -285,7 +285,184 @@
       "1BACB",
       "1BAED"
     ],
-    "recording_room_door": "source2A431 P90 inward hinged west opening,0.90nominal/0.82clear; keep hinged mechanism"
+    "recording_room_door": "source2A431 P90 inward hinged west opening,0.90nominal/0.82clear; keep hinged mechanism",
+    "source_windows": {
+      "count": 42,
+      "south": 38,
+      "east": 4,
+      "width_m": 0.7,
+      "height_m": 1.14,
+      "handles": [
+        {
+          "handle": "1BA24",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA2A",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA30",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA36",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA42",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA48",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA4E",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA54",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA5A",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA60",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA66",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA6C",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA76",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA7C",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA82",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA88",
+          "facade": "south"
+        },
+        {
+          "handle": "1BA9B",
+          "facade": "south"
+        },
+        {
+          "handle": "1BAA1",
+          "facade": "south"
+        },
+        {
+          "handle": "1BAA7",
+          "facade": "south"
+        },
+        {
+          "handle": "1BAAD",
+          "facade": "south"
+        },
+        {
+          "handle": "1BAB3",
+          "facade": "south"
+        },
+        {
+          "handle": "1BAB9",
+          "facade": "south"
+        },
+        {
+          "handle": "1BABF",
+          "facade": "south"
+        },
+        {
+          "handle": "1BAC5",
+          "facade": "south"
+        },
+        {
+          "handle": "1BAD1",
+          "facade": "south"
+        },
+        {
+          "handle": "1BAD7",
+          "facade": "south"
+        },
+        {
+          "handle": "1BADD",
+          "facade": "south"
+        },
+        {
+          "handle": "1BAE3",
+          "facade": "south"
+        },
+        {
+          "handle": "1BAF3",
+          "facade": "south"
+        },
+        {
+          "handle": "1BAF9",
+          "facade": "south"
+        },
+        {
+          "handle": "1BAFF",
+          "facade": "south"
+        },
+        {
+          "handle": "1BB05",
+          "facade": "south"
+        },
+        {
+          "handle": "1BB0B",
+          "facade": "south"
+        },
+        {
+          "handle": "1BB11",
+          "facade": "south"
+        },
+        {
+          "handle": "1BB17",
+          "facade": "south"
+        },
+        {
+          "handle": "1BB1D",
+          "facade": "south"
+        },
+        {
+          "handle": "1BB2B",
+          "facade": "south"
+        },
+        {
+          "handle": "1BB31",
+          "facade": "south"
+        },
+        {
+          "handle": "216CD",
+          "facade": "east"
+        },
+        {
+          "handle": "216D3",
+          "facade": "east"
+        },
+        {
+          "handle": "216D9",
+          "facade": "east"
+        },
+        {
+          "handle": "216DF",
+          "facade": "east"
+        }
+      ]
+    }
   },
   "new_features": {
     "weighbridge": {

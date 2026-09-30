@@ -25,3 +25,6 @@ Pintu industri memakai gerak geser dua daun sebagai asumsi mekanisme. Dimensi da
 ## Penyerahan
 
 Luna dan Astra mempertahankan repo serta Pages masing-masing. Output native revisi dibuat langsung dengan pustaka C API SketchUp lokal sesuai instruksi Bam, tanpa menggunakan MCP SketchUp. Verifikasi native dilakukan dengan memuat ulang file melalui pustaka yang sama; ini dibedakan dari buka ulang melalui antarmuka aplikasi.
+
+## Source-window enumeration
+Raw kusen polylines of 0.70 × 1.14 m enumerate 42 frames: 36 upper and 2 lower on the south elevation, plus 4 lower on the east elevation (216CD/216D3/216D9/216DF). East sill is 1.26 m above floor-line 21670. These are source dimensions; room-window heights remain assumptions.

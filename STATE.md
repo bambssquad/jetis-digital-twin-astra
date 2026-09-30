@@ -85,3 +85,6 @@
 - Source-corrected application commit 2f8f3fea832535b9e49cbaea8e6e827572562a03 deployed successfully in Pages run36695562773. Public native download is29,680,435bytes; hash7fb7f3c029e6b473ebb348a30b6aa186d33aa4939ae47b2542617ecb66ab6f45 matches final local SKP.
 - Anonymous runtime files match local source after Git line-ending normalization. Live browser reads ready=true,2,713elements,12textureloads,zeroasseterrors. Source-independent review PASS all27main industrialapertures,42mainwindowapertures,P90,recorderwindow,stairsjoinL2,WF150andCNP.
 - Screenshot saved during initial textureload; later full-texture state is confirmed by browserread-back. Additional screenshot capture timed out, so no claim that the image records all12textures. Direct native output used no MCP; desktop UI reopening remains unchecked. Revision02Astra complete.
+
+### R02 purlin source decision
+- Preserve the locked 1.20 m slope spacing from explicit AA aligned dimensions1791C–17942;17943 is a terminal0.80m segment. Reason: T2 roof-plan layerHAT lines1708F/17090 and170A1/170A2 are1.20m apart in plan but are not identified as purlin axes, and cannot override the explicit slope measurement. Plan1.20m would imply slope1.242331m at15°, a3.53% discrepancy. The plan lines remain recorded as schematic/drafting ambiguity; source17985 specifies CNP125×2mm.

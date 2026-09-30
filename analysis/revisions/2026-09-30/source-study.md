@@ -28,3 +28,6 @@ Luna dan Astra mempertahankan repo serta Pages masing-masing. Output native revi
 
 ## Source-window enumeration
 Raw kusen polylines of 0.70 � 1.14 m enumerate 42 frames: 36 upper and 2 lower on the south elevation, plus 4 lower on the east elevation (216CD/216D3/216D9/216DF). East sill is 1.26 m above floor-line 21670. These are source dimensions; room-window heights remain assumptions.
+
+## Purlin spacing evidence
+The explicit AA aligned dimensions1791C–17942 measure1.20m along the15° roof slope (horizontal projection1.159111m);17943 measures the terminal0.80m. T2 layerHAT roof-plan lines are spaced1.20m horizontally and have no CNP axis label. The locked slope spacing takes precedence; this3.53% projection mismatch is recorded as a drawing ambiguity, not converted into a new structural specification.

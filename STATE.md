@@ -65,3 +65,9 @@
 - Local viewer renders 2,689 elements, loads12/12 maps, and reports zero asset errors. All30controls opened and closed; actual render matrices verify28two-leaf opposite translations with unchanged elevations, P90 rotation, and gate displacement. Offline57routes/114directions pass.
 - Mobile390x844 emulation loads1Ktextures, supports both camera modes, measuresstandingavatar1.70m, and joystickdrag movedthecharacter. Temporaryviewportoverride cleared.
 - Browser stair preset moved inside the building to reveal actual source void; geometry unchanged. Public deployment remains pending.
+
+### R02 public completion — Astra
+- Existing public repo updated at application commit edf8ff8e8098977a2c4ce122c83ca05ab7d37627. Pages run 36692993181 completed successfully.
+- Anonymous download returns 29,674,058 bytes and SHA-256 c8150ef5b57ed2e1d2f0ac017f5dc7ba00ef23b32604055ca5a51d8a6568ef00, identical to the native audited file. Live source, scene and runtime assets match the committed files after Git line ending normalization.
+- Live Chrome viewer reports ready, 2,689 elements, 12/12 texture loads and zero asset errors. Public screenshot: outputs/revision02-live.jpg. Native desktop UI reopen was not used, per Bam's direct-output request.
+- Source study, floor and opening decisions, visual assumptions, native verification and live evidence are saved. Revision 02 Astra delivery complete.

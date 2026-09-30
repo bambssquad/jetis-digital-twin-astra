@@ -285,5 +285,70 @@
   "avatar_measured_height_m": 1.7,
   "native_UI_reopen": false,
   "native_API_reload": true,
-  "publication": "pending"
+  "publication": {
+    "commit": "edf8ff8e8098977a2c4ce122c83ca05ab7d37627",
+    "workflow_id": 36692993181,
+    "workflow_conclusion": "success",
+    "repo_public": true,
+    "assets": [
+      {
+        "path": "downloads/model.skp",
+        "status": 200,
+        "bytes": 29674058,
+        "sha256": "c8150ef5b57ed2e1d2f0ac017f5dc7ba00ef23b32604055ca5a51d8a6568ef00",
+        "match": true
+      },
+      {
+        "path": "assets/scene.json",
+        "status": 200,
+        "bytes": 1208068,
+        "sha256": "6fc8f838ebd459e6e79ca480119e25feee1c9bd7ab09b18b3e7748df971b9267",
+        "match": false,
+        "local_sha256": "0651e1d9e6b7f2f1ac42e57eaa7399673638c8f7b5f1754479977fd48814e4ea",
+        "lf_normalized_match": true
+      },
+      {
+        "path": "project.json",
+        "status": 200,
+        "bytes": 7184,
+        "sha256": "542358bec1fdcc4d1d3d7a3a4601379ec05b7d8270052dc56632b0052acb0121",
+        "match": false,
+        "local_sha256": "0ec4960d3146fbfdd9586f149a4326cb637545104b1d344929055554ee81614d",
+        "lf_normalized_match": true
+      },
+      {
+        "path": "app.js",
+        "status": 200,
+        "bytes": 19493,
+        "sha256": "3481133d17120ac716596fdba35cf9153390e7f804937f0d9cb6242984f0a06a",
+        "match": false,
+        "local_sha256": "a1b113fbd756e4d1a4dbf929ca7570855c2a49af727a8aca7e66c64bc13560a9",
+        "lf_normalized_match": true
+      },
+      {
+        "path": "experience.js",
+        "status": 200,
+        "bytes": 8705,
+        "sha256": "2f7ca92f47c06bda9f57197a425e37790ca87c2215804413fe8cd9fbf8f31bba",
+        "match": false,
+        "local_sha256": "26f0b0e95f630804ce180b80611c820c2a68b6a7f87244d3cf10a7cd5edc91c1",
+        "lf_normalized_match": true
+      },
+      {
+        "path": "navigation.js",
+        "status": 200,
+        "bytes": 4786,
+        "sha256": "2aaebc1e1a4358efa4cac9ad3f19b57809f9bfdcd6a78d039840431032ba1133",
+        "match": false,
+        "local_sha256": "5568050214b4fe13b6bba4d381ba59ad7632570016e81493d72216689ccb5d55",
+        "lf_normalized_match": true
+      }
+    ],
+    "browser": {
+      "ready": true,
+      "elements": 2689,
+      "texture_loads": 12,
+      "asset_errors": []
+    }
+  }
 }

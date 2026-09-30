@@ -4,7 +4,7 @@
   "source_filename": "SEND.Pengolahan Hasil Laut - Jetis (1).dwg",
   "source_sha256": "793d4ec07d86248e5912676eea1f0c5720186aceacdef0ef97ef004aa138faf5",
   "publication": "update-existing-public-github-pages",
-  "status": "native-and-local-viewer-verified",
+  "status": "published-and-verified",
   "unit_evidence": "Frozen revision contract: 2A31078x30,2A31384x30 and30m section spans",
   "scene_elements": 2689,
   "native_output": {
@@ -19,7 +19,7 @@
   },
   "web_output": "web/dist",
   "repository_url": "https://github.com/bambssquad/jetis-digital-twin-astra",
-  "native_readback_passed": false,
+  "native_readback_passed": true,
   "pages_url": "https://bambssquad.github.io/jetis-digital-twin-astra/",
   "revision": "02",
   "scene_sha256": "0651e1d9e6b7f2f1ac42e57eaa7399673638c8f7b5f1754479977fd48814e4ea",
@@ -31,9 +31,9 @@
   "verification": {
     "geometry": "PASS",
     "navigation": "PASS",
-    "native": "pending coordinator offline C API",
-    "rendered_web": "pending coordinator",
-    "publication": "pending coordinator"
+    "native": "PASS C API reload",
+    "rendered_web": "PASS local and live",
+    "publication": "PASS anonymous download and successful Pages workflow"
   },
   "previous_revision": {
     "name": "Pengolahan Hasil Laut Jetis - Astra",
@@ -56,5 +56,12 @@
     "door_and_gate_controls_verified": true,
     "pages_workflow_run_id": "36542692008",
     "live_viewer_textures_loaded": "12/12"
-  }
+  },
+  "web_download_sha256": "c8150ef5b57ed2e1d2f0ac017f5dc7ba00ef23b32604055ca5a51d8a6568ef00",
+  "live_download_sha256": "c8150ef5b57ed2e1d2f0ac017f5dc7ba00ef23b32604055ca5a51d8a6568ef00",
+  "live_download_bytes": 29674058,
+  "pages_workflow_run_id": "36692993181",
+  "published_commit": "edf8ff8e8098977a2c4ce122c83ca05ab7d37627",
+  "door_and_gate_controls_verified": true,
+  "live_viewer_textures_loaded": "12/12"
 }

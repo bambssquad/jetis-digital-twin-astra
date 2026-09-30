@@ -80,3 +80,8 @@
 - Enumerated all 42 source frames: 38 south and 4 east. Added the missing east openings and subtracted stacked window holes from each existing vertical wall interval. Reason: two upper windows share plan positions with lower windows; both holes must remain clear.
 - Current model contains 2,713 scene/native objects. C API separate-process reload passes all IDs and bounds, 8 cameras, 9 texture scales and zero nonmanifold solids. Native SHA-256 7fb7f3c029e6b473ebb348a30b6aa186d33aa4939ae47b2542617ecb66ab6f45.
 - P90 render reached progress1; the actual opened-mesh matrix maps to source leaf2A0A7 with centre error0.0000005044m.
+
+### R02 final public receipt — Astra
+- Source-corrected application commit 2f8f3fea832535b9e49cbaea8e6e827572562a03 deployed successfully in Pages run36695562773. Public native download is29,680,435bytes; hash7fb7f3c029e6b473ebb348a30b6aa186d33aa4939ae47b2542617ecb66ab6f45 matches final local SKP.
+- Anonymous runtime files match local source after Git line-ending normalization. Live browser reads ready=true,2,713elements,12textureloads,zeroasseterrors. Source-independent review PASS all27main industrialapertures,42mainwindowapertures,P90,recorderwindow,stairsjoinL2,WF150andCNP.
+- Screenshot saved during initial textureload; later full-texture state is confirmed by browserread-back. Additional screenshot capture timed out, so no claim that the image records all12textures. Direct native output used no MCP; desktop UI reopening remains unchecked. Revision02Astra complete.

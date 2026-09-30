@@ -285,7 +285,67 @@
   "avatar_measured_height_m": 1.7,
   "native_UI_reopen": false,
   "native_API_reload": true,
-  "publication": "pending source-window correction deploy",
+  "publication": {
+    "commit": "2f8f3fea832535b9e49cbaea8e6e827572562a03",
+    "workflow_id": 36695562773,
+    "workflow_conclusion": "success",
+    "repo_public": true,
+    "assets": [
+      {
+        "path": "downloads/model.skp",
+        "status": 200,
+        "bytes": 29680435,
+        "sha256": "7fb7f3c029e6b473ebb348a30b6aa186d33aa4939ae47b2542617ecb66ab6f45",
+        "match": true
+      },
+      {
+        "path": "assets/scene.json",
+        "status": 200,
+        "bytes": 1217226,
+        "sha256": "03a5b0c4c5f12c9887a75eb4fe7dfb7d66babe4345338f244d2b6ba66934ba9d",
+        "match": false,
+        "lf_normalized_match": true
+      },
+      {
+        "path": "project.json",
+        "status": 200,
+        "bytes": 7184,
+        "sha256": "542358bec1fdcc4d1d3d7a3a4601379ec05b7d8270052dc56632b0052acb0121",
+        "match": false,
+        "lf_normalized_match": true
+      },
+      {
+        "path": "app.js",
+        "status": 200,
+        "bytes": 19493,
+        "sha256": "3481133d17120ac716596fdba35cf9153390e7f804937f0d9cb6242984f0a06a",
+        "match": false,
+        "lf_normalized_match": true
+      },
+      {
+        "path": "experience.js",
+        "status": 200,
+        "bytes": 8705,
+        "sha256": "2f7ca92f47c06bda9f57197a425e37790ca87c2215804413fe8cd9fbf8f31bba",
+        "match": false,
+        "lf_normalized_match": true
+      },
+      {
+        "path": "navigation.js",
+        "status": 200,
+        "bytes": 4786,
+        "sha256": "2aaebc1e1a4358efa4cac9ad3f19b57809f9bfdcd6a78d039840431032ba1133",
+        "match": false,
+        "lf_normalized_match": true
+      }
+    ],
+    "browser": {
+      "ready": true,
+      "elements": 2713,
+      "texture_loads": 12,
+      "asset_errors": []
+    }
+  },
   "source_independent_review": {
     "review_scope": "Read-only independent geometry comparison. Actual element coordinates versus raw DWG polylines/block transform. No use of opening_evidence or generator-derived expected coordinates. Not a native SKP face audit.",
     "scene_sha256": "3906299bb1100f2bfadd84181a297a768904556c88080787281ac254d561d98a",
